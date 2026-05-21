@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Calendar, Building2, Sparkles } from "lucide-react";
+import { TrendingUp, Calendar, Building2, Sparkles } from "lucide-react";
 
 export default function Hero({ data }) {
   const { candidate, executiveSummary, roleDescription, roleResponsibilities, firstOfKindWins } = data;
@@ -15,7 +15,7 @@ export default function Hero({ data }) {
         <h1 className="hero-name">{candidate.name}</h1>
         <div className="hero-transition">
           <span className="current-role">{candidate.currentTitle}</span>
-          <ArrowUpRight className="arrow-icon" size={24} />
+          <TrendingUp className="arrow-icon" size={24} />
           <span className="target-role">{candidate.targetTitle}</span>
         </div>
 

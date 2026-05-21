@@ -27,7 +27,7 @@ const promotionData = {
   ],
 
   acvByYear: [
-    { year: "FY2026", total: "$1.4M (Q1)", quarters: [{ q: "Q1", amount: "$1.4M", note: "Through Q1" }] },
+    { year: "FY2026", total: "$1.4M", quarters: [] },
     {
       year: "FY2025",
       total: "$2.2M",
@@ -57,7 +57,7 @@ const promotionData = {
   ],
 
   products: [
-    "Data360", "Agentforce", "Slack", "MuleSoft", "Marketing Cloud",
+    "Data360", "Agentforce", "Slack",
     "Sales Cloud", "Service Cloud", "Field Service", "Einstein 1",
   ],
 
