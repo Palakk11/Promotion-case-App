@@ -122,10 +122,10 @@ const promotionData = {
         type: "Attrition Save + Expansion",
         impacts: [
           "Contributed in leading strategy and identifying whitespace for additional products",
-          "Saved $350K in forecasted attrition",
+          "Saved $631K in forecasted attrition",
           "Actively planning a customer on-site in June 2026",
         ],
-        story: `The account had a critical renewal in April 2026 with ~$350K forecasted attrition driven by Field Service licenses. As PerfectVision optimized operations after losing the AT&T contract and facing competition from Amazon Leo (satellite broadband), maintaining peak FSL license counts was no longer their priority. A purely defensive renewal approach would've led to an ARR downgrade.`,
+        story: `The account had a critical renewal in April 2026 with ~$631K forecasted attrition driven by Field Service licenses. As PerfectVision optimized operations after losing the AT&T contract and facing competition from Amazon Leo (satellite broadband), maintaining peak FSL license counts was no longer their priority. A purely defensive renewal approach would've led to an ARR downgrade.`,
         actions: [
           "Joined the knowledge transfer call in late February 2026 to get up to speed on the account",
           "Owned core SE discovery — captured notes from key meetings with SVP Marketing, IT, and CIO, identifying the dealer marketing gap as the strategic hook",
