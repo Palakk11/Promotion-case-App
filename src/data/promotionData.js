@@ -7,7 +7,7 @@ const promotionData = {
     manager: "[Manager Name]",
     tenure: "3 Years 9 Months",
     date: "May 2026",
-    tagline: "Consistency Over Intensity",
+    tagline: "Turn Ambiguity into Certainty",
     slackUrl: "https://salesforce.enterprise.slack.com/team/U03A3NRRUBY",
   },
 
@@ -196,7 +196,7 @@ const promotionData = {
   },
 
   collaborative: {
-    coreValue: "Team-player, Communicator",
+    coreValue: "Team-player",
     summary: `Palakk consistently demonstrates Lead SE behaviors through her commitment to collaborative, team-based selling — not only with her sales team but also the extended solutions team. She actively builds bridges between AEs and SEs, between product teams and customers, and between new and experienced team members.`,
     items: [
       {
