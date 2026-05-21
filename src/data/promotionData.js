@@ -44,8 +44,8 @@ const promotionData = {
   highlights: [
     { label: "Total ACV", value: "$5.8M", subtitle: "through FY27 Q1" },
     { label: "Award", value: "Solutions MVP", subtitle: "Oct FY26" },
-    { label: "AE Enablement", value: "250+", subtitle: "AEs | 15+ sessions FY26" },
-    { label: "SE Enablement", value: "100+", subtitle: "SEs | 3+ sessions FY26" },
+    { label: "AEs Enabled", value: "250+", subtitle: "AEs | 15+ sessions FY26" },
+    { label: "SEs Enabled", value: "100+", subtitle: "SEs | 3+ sessions FY26" },
     { label: "Tenure", value: "3Y 9M", subtitle: "at Salesforce" },
   ],
 

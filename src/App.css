@@ -221,7 +221,7 @@
 
 .hero-tagline {
   font-size: 20px;
-  color: var(--gold-light);
+  color: var(--green);
   margin-bottom: 28px;
 }
 
@@ -421,7 +421,7 @@
 .metric-value {
   font-size: 32px;
   font-weight: 800;
-  color: var(--accent-light);
+  color: var(--green);
   font-family: var(--mono);
   word-break: break-word;
   text-align: center;
@@ -467,15 +467,15 @@
 }
 
 .badge.blackbelt {
-  background: var(--gold-glow);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  color: var(--gold-light);
+  background: var(--purple-glow);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  color: #a78bfa;
 }
 
 .badge.product {
-  background: var(--accent-glow);
-  border: 1px solid rgba(59, 130, 246, 0.3);
-  color: var(--accent-light);
+  background: rgba(125, 211, 252, 0.12);
+  border: 1px solid rgba(125, 211, 252, 0.3);
+  color: #7dd3fc;
 }
 
 /* ========== ACV TRACKER ========== */
