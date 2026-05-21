@@ -7,7 +7,7 @@
 .main-content {
   margin-left: var(--sidebar-width);
   flex: 1;
-  max-width: 960px;
+  max-width: 1100px;
   padding: 0 40px 80px;
   transition: margin-left 0.3s ease;
 }
@@ -1005,16 +1005,92 @@
 }
 
 /* ========== COMPETENCY RADAR ========== */
-.competency-section {
-  padding: 40px 0;
+.competency-layout {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.competency-list-left,
+.competency-list-right {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.competency-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.competency-card:hover,
+.competency-card.active {
+  border-color: var(--accent);
+  background: var(--bg-card-hover);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.1);
+  transform: translateY(-1px);
+}
+
+.competency-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.competency-card-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.competency-card-score {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--accent-light);
+  font-family: var(--mono);
+}
+
+.competency-card-bar {
+  height: 4px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.competency-card-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--purple));
+  border-radius: 4px;
+}
+
+.competency-card-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+.competency-card:hover .competency-card-desc,
+.competency-card.active .competency-card-desc {
+  max-height: 80px;
+  opacity: 1;
 }
 
 .radar-container {
   position: relative;
-  width: 340px;
-  height: 340px;
+  width: 380px;
+  height: 380px;
+  flex-shrink: 0;
 }
 
 .radar-canvas {
@@ -1025,8 +1101,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 340px;
-  height: 340px;
+  width: 380px;
+  height: 380px;
   pointer-events: none;
 }
 
@@ -1068,6 +1144,27 @@
 
 .radar-label.hovered .radar-label-score {
   opacity: 1;
+}
+
+@media (max-width: 1100px) {
+  .competency-layout {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .competency-list-left,
+  .competency-list-right {
+    width: 100%;
+    max-width: 500px;
+  }
+  .competency-list-left {
+    order: 2;
+  }
+  .radar-container {
+    order: 1;
+  }
+  .competency-list-right {
+    order: 3;
+  }
 }
 
 /* ========== EXPANDABLE DEALS ========== */
