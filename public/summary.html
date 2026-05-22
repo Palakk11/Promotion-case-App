@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palakk Shrivastava — Lead SE Promotion Summary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #1e293b;
+      background: #fff;
+      font-size: 11px;
+      line-height: 1.5;
+      padding: 32px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 3px solid #1e40af;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    .header-left h1 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+    .header-left .transition {
+      font-size: 13px;
+      color: #475569;
+      margin-top: 2px;
+    }
+    .header-left .transition .target {
+      color: #1e40af;
+      font-weight: 700;
+    }
+    .header-right {
+      text-align: right;
+      font-size: 10px;
+      color: #64748b;
+    }
+    .header-right .tenure {
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    /* Core Values */
+    .core-values {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .cv-pill {
+      padding: 3px 10px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      font-size: 9px;
+      font-weight: 600;
+      color: #1e40af;
+    }
+
+    /* Executive Summary */
+    .exec-summary {
+      background: #f8fafc;
+      border-left: 3px solid #1e40af;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      font-size: 10.5px;
+      line-height: 1.6;
+      color: #334155;
+    }
+
+    /* Two column layout */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    /* Metrics bar */
+    .metrics-bar {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .metric-box {
+      text-align: center;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 8px 4px;
+    }
+    .metric-box .val {
+      font-size: 18px;
+      font-weight: 800;
+      color: #059669;
+      display: block;
+    }
+    .metric-box .lbl {
+      font-size: 8px;
+      font-weight: 600;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .metric-box .sub {
+      font-size: 7px;
+      color: #94a3b8;
+    }
+
+    /* Section headers */
+    h2 {
+      font-size: 12px;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+    }
+
+    /* Deal cards */
+    .deal {
+      margin-bottom: 10px;
+    }
+    .deal-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #0f172a;
+      display: flex;
+      justify-content: space-between;
+    }
+    .deal-badge {
+      font-size: 9px;
+      font-weight: 600;
+      padding: 1px 8px;
+      border-radius: 10px;
+    }
+    .badge-green {
+      background: #dcfce7;
+      color: #059669;
+    }
+    .badge-blue {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .deal p {
+      font-size: 10px;
+      color: #475569;
+      margin-top: 2px;
+    }
+    .deal-impacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+    .deal-impact {
+      font-size: 9px;
+      color: #059669;
+      font-weight: 600;
+    }
+    .deal-impact::before {
+      content: "";
+    }
+
+    /* Programs list */
+    .program-item {
+      margin-bottom: 8px;
+    }
+    .program-item h3 {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .program-item .outcome {
+      font-size: 9px;
+      color: #059669;
+      font-weight: 600;
+      margin-top: 1px;
+    }
+    .program-item p {
+      font-size: 9.5px;
+      color: #475569;
+      margin-top: 1px;
+    }
+
+    /* Firsts */
+    .firsts {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .first-pill {
+      padding: 3px 10px;
+      background: #fef3c7;
+      border: 1px solid #fcd34d;
+      border-radius: 12px;
+      font-size: 9px;
+      font-weight: 600;
+      color: #92400e;
+    }
+
+    /* ACV tracker */
+    .acv-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
+    .acv-table th {
+      text-align: left;
+      font-size: 9px;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 3px 6px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .acv-table td {
+      padding: 4px 6px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .acv-table .year { font-weight: 700; color: #0f172a; }
+    .acv-table .amount { font-weight: 700; color: #1e40af; font-family: 'Inter', monospace; }
+    .acv-table .note { font-size: 9px; color: #059669; }
+
+    /* Certs */
+    .certs {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .cert-pill {
+      padding: 3px 10px;
+      background: #f5f3ff;
+      border: 1px solid #c4b5fd;
+      border-radius: 12px;
+      font-size: 9px;
+      font-weight: 600;
+      color: #6d28d9;
+    }
+
+    /* Testimonial */
+    .testimonial {
+      background: #f8fafc;
+      border-left: 3px solid #f59e0b;
+      padding: 8px 12px;
+      margin-top: 8px;
+      font-style: italic;
+      font-size: 10px;
+      color: #475569;
+    }
+    .testimonial cite {
+      display: block;
+      font-style: normal;
+      font-size: 9px;
+      color: #94a3b8;
+      margin-top: 3px;
+    }
+    .customer-quote {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #d97706;
+      padding: 6px 0;
+    }
+
+    /* Mentorship row */
+    .mentorship-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .mentorship-item h3 {
+      font-size: 10px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .mentorship-item p {
+      font-size: 9px;
+      color: #475569;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 8px;
+      margin-top: 12px;
+      text-align: center;
+      font-size: 9px;
+      color: #94a3b8;
+    }
+
+    /* Print */
+    @media print {
+      body { padding: 20px 24px; font-size: 10px; }
+      @page { margin: 0.4in; size: letter; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Palakk Shrivastava</h1>
+      <div class="transition">Senior Account SE &nbsp;&rarr;&nbsp; <span class="target">Lead Solution Engineer</span></div>
+      <div style="font-size:10px;color:#64748b;margin-top:2px;">TMT CMRCL AMER &mdash; Salesforce</div>
+    </div>
+    <div class="header-right">
+      <div class="tenure">3 Years 9 Months</div>
+      <div>May 2026</div>
+    </div>
+  </div>
+
+  <!-- Core Values -->
+  <div class="core-values">
+    <span class="cv-pill">Customer Focus</span>
+    <span class="cv-pill">Trust</span>
+    <span class="cv-pill">Curiosity</span>
+    <span class="cv-pill">Collaboration</span>
+  </div>
+
+  <!-- Executive Summary -->
+  <div class="exec-summary">
+    Palakk has consistently delivered exceptional results, closing <strong>$6.05M in ACV</strong> through FY27 Q1 while pioneering the <strong>first Agentforce for Service deal in SMB</strong>, the <strong>first Einstein 1 Field Service deal company-wide</strong>, and the <strong>first Marketing Cloud Growth deal company-wide</strong>. Beyond individual success, she has demonstrated Lead SE-level influence by leading the Data360 Tiger Team for 250+ AEs, launching Palakk's Potluck for 100+ SEs, and serving as Lead Demo Driver for the SMB keynote at World Tour NYC. Her LightEdge workshop became a benchmark engagement that the customer sent to ServiceNow to replicate.
+  </div>
+
+  <!-- Metrics -->
+  <div class="metrics-bar">
+    <div class="metric-box"><span class="val">$6.05M</span><span class="lbl">Total ACV</span><span class="sub">through FY27 Q1</span></div>
+    <div class="metric-box"><span class="val">MVP</span><span class="lbl">Solutions Award</span><span class="sub">Oct FY26</span></div>
+    <div class="metric-box"><span class="val">250+</span><span class="lbl">AEs Enabled</span><span class="sub">15+ sessions FY26</span></div>
+    <div class="metric-box"><span class="val">100+</span><span class="lbl">SEs Enabled</span><span class="sub">3+ sessions FY26</span></div>
+    <div class="metric-box"><span class="val">$693K</span><span class="lbl">Open Pipe Q2</span><span class="sub">FY27</span></div>
+  </div>
+
+  <!-- First-of-kind -->
+  <div class="firsts">
+    <span class="first-pill">First Agentforce for Service deal in SMB</span>
+    <span class="first-pill">First Einstein 1 Field Service deal company-wide</span>
+    <span class="first-pill">First Marketing Cloud Growth deal company-wide</span>
+  </div>
+
+  <div class="two-col">
+
+    <!-- LEFT COLUMN -->
+    <div>
+
+      <!-- ACV -->
+      <h2>ACV Track Record</h2>
+      <table class="acv-table">
+        <tr><th>Year</th><th>ACV</th><th>Highlights</th></tr>
+        <tr><td class="year">FY27</td><td class="amount">$142K</td><td class="note">Q1 | $693K open pipe</td></tr>
+        <tr><td class="year">FY26</td><td class="amount">$1.4M</td><td></td></tr>
+        <tr><td class="year">FY25</td><td class="amount">$2.6M</td><td class="note">#1 SB Q1, #2 SB Q3</td></tr>
+        <tr><td class="year">FY24</td><td class="amount">$1.37M</td><td></td></tr>
+        <tr><td class="year">FY23</td><td class="amount">$539K</td><td class="note">Q4 only</td></tr>
+      </table>
+
+      <!-- Deal Excellence -->
+      <h2>Deal Excellence</h2>
+      <div class="deal">
+        <div class="deal-title">LightEdge Solutions <span class="deal-badge badge-green">$1M+ Pipeline</span></div>
+        <p>Led a 2-day custom Agentforce + Data360 workshop in Austin. Built fully custom demos using Claude + Cursor. Orchestrated cross-functional team of architects, specialists, and execs.</p>
+        <div class="deal-impacts">
+          <span class="deal-impact">$80K closed in 3 weeks</span>
+          <span class="deal-impact">$1M+ pipeline generated</span>
+        </div>
+      </div>
+      <div class="deal">
+        <div class="deal-title">Perfect Vision <span class="deal-badge badge-blue">Attrition Save</span></div>
+        <p>Saved $631K forecasted attrition by identifying whitespace (CDP/Data Cloud play) and turning a defensive renewal into expansion. Publicly recognized by leadership.</p>
+      </div>
+
+      <!-- Testimonial -->
+      <div class="customer-quote">"Why didn't ServiceNow do this for us?"</div>
+      <div class="testimonial">
+        "Palakk just rolled with it, leveraged resources to get help when needed and worked overtime to pull it off... They specifically called out how specific to them our whole session was."
+        <cite>&mdash; Nick Pauze, Account Executive</cite>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+
+      <!-- Leadership -->
+      <h2>Leadership & Programs</h2>
+      <div class="program-item">
+        <h3>Data360 Tiger Team &mdash; Sales & Solutions Pillar Lead</h3>
+        <p>Led 5 SEs, enabled 250+ AEs across 8+ sessions, influenced $1.8M ACV. Built D360 Gem for AE self-service.</p>
+        <div class="outcome">250+ AEs | $1.8M influenced | Recognized on Adam Alfano's AHC</div>
+      </div>
+      <div class="program-item">
+        <h3>World Tour NYC &mdash; Lead Demo Driver, SMB Keynote</h3>
+        <p>Created 2 full demos from scratch, delivered live to 200+ audience. Demo org reused at Dreamforce FY26.</p>
+        <div class="outcome">200+ live | 270 VOD views | Dreamforce reuse</div>
+      </div>
+      <div class="program-item">
+        <h3>Palakk's Potluck &mdash; SE Release Enablement</h3>
+        <p>Self-initiated peer learning program. Recruited 10 SEs as co-presenters, enabled 40+ SEs across releases.</p>
+        <div class="outcome">40+ SEs enabled | Culture Builder recognition</div>
+      </div>
+      <div class="program-item">
+        <h3>Agentic Contact Center Roadshow &mdash; Austin</h3>
+        <p>Self-nominated as multi-cloud SME for VP-sponsored 10-city program. Supported 40+ customers with live Q&A.</p>
+      </div>
+      <div class="program-item">
+        <h3>Possible Missionforce &mdash; Agentforce for Service</h3>
+        <p>Created enablement content and led 2 sessions enabling 100+ SEs across SMB.</p>
+      </div>
+
+      <!-- Certs -->
+      <h2>Blackbelts & Certifications</h2>
+      <div class="certs">
+        <span class="cert-pill">Citizen Architect</span>
+        <span class="cert-pill">Revenue Cloud</span>
+        <span class="cert-pill">Agentforce / Einstein</span>
+        <span class="cert-pill">BVS &mdash; 1st Cohort</span>
+        <span class="cert-pill">AI-Native Demo Engineering</span>
+      </div>
+
+      <!-- Mentorship -->
+      <h2>Mentorship</h2>
+      <div class="mentorship-row">
+        <div class="mentorship-item">
+          <h3>Trailguide &mdash; Sarah Fung</h3>
+          <p>Coaching, shadowing & career guidance during SE onboarding</p>
+        </div>
+        <div class="mentorship-item">
+          <h3>Revenue Cloud Specialist</h3>
+          <p>$55K+ ACV contributed outside own book of business</p>
+        </div>
+      </div>
+      <div class="mentorship-row">
+        <div class="mentorship-item">
+          <h3>Peer Cert Panelist</h3>
+          <p>Evaluating new SE demo delivery & discovery quality</p>
+        </div>
+        <div class="mentorship-item">
+          <h3>UTD Careers Panel</h3>
+          <p>Represented Salesforce SE career path to 50+ students</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    Palakk Shrivastava &mdash; Senior Account SE &rarr; Lead Solution Engineer &mdash; TMT CMRCL AMER &mdash; May 2026
+  </div>
+
+</body>
+</html>

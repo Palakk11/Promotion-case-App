@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function ACVTracker({ acvByYear }) {
-  const maxACV = 2200000;
+  const maxACV = 2600000;
 
   const parseACV = (str) => {
     const match = str.replace(/[^0-9.]/g, "");
@@ -21,7 +21,8 @@ export default function ACVTracker({ acvByYear }) {
       <div className="acv-chart">
         {acvByYear.map((year, i) => {
           const acvNum = parseACV(year.total);
-          const pct = Math.min((acvNum / maxACV) * 100, 100);
+          const pipePct = year.openPipe ? Math.min((parseACV(year.openPipe) / maxACV) * 100, 100) : 0;
+          const closedPct = Math.min((acvNum / maxACV) * 100, 100);
           return (
             <motion.div
               key={i}
@@ -33,14 +34,28 @@ export default function ACVTracker({ acvByYear }) {
             >
               <div className="acv-year">{year.year}</div>
               <div className="acv-bar-container">
+                {year.openPipe && (
+                  <motion.div
+                    className="acv-bar-pipe"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${pipePct}%` }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.15 + 0.5, duration: 0.8 }}
+                  />
+                )}
                 <motion.div
                   className="acv-bar"
                   initial={{ width: 0 }}
-                  whileInView={{ width: `${pct}%` }}
+                  whileInView={{ width: `${closedPct}%` }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.15 + 0.3, duration: 0.8 }}
                 />
-                <span className="acv-amount">{year.total}</span>
+                <span className="acv-amount">
+                  {year.total}
+                  {year.openPipe && (
+                    <span className="acv-pipe-label"> | {year.openPipeLabel || "Open Pipe"}: {year.openPipe}</span>
+                  )}
+                </span>
               </div>
               <div className="acv-quarters">
                 {year.quarters.map((q, j) => (

@@ -423,9 +423,17 @@
   font-weight: 800;
   color: var(--green);
   font-family: var(--mono);
-  word-break: break-word;
   text-align: center;
   line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.metric-card:nth-child(2) .metric-value {
+  font-size: 22px;
+  white-space: pre-line;
 }
 
 .metric-label {
@@ -514,6 +522,18 @@
   background: linear-gradient(90deg, var(--accent), var(--purple));
   border-radius: 8px;
   position: relative;
+  z-index: 2;
+}
+
+.acv-bar-pipe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.3), rgba(16, 185, 129, 0.5));
+  border: 1px dashed var(--green);
+  border-radius: 8px;
+  z-index: 1;
 }
 
 .acv-amount {
@@ -525,6 +545,13 @@
   font-size: 14px;
   color: var(--text-heading);
   font-family: var(--mono);
+  z-index: 3;
+}
+
+.acv-pipe-label {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .acv-quarters {

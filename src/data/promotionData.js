@@ -11,7 +11,7 @@ const promotionData = {
     slackUrl: "https://salesforce.enterprise.slack.com/team/U03A3NRRUBY",
   },
 
-  executiveSummary: `Palakk Shrivastava's performance as a Senior Solution Engineer, combined with her leadership impact and ability to scale enablement across the organization, makes her a strong candidate for promotion to Lead SE. Over 3 years and 9 months at Salesforce, Palakk has consistently delivered exceptional business results, closing $5.8M in ACV through FY27 Q1 while pioneering several first-of-their-kind wins, including the first Agentforce for Service deal in SMB and the first Einstein 1 Field Service and Marketing Cloud Growth deals company-wide. Beyond her individual success, she has demonstrated Lead SE-level influence by leading the Data360 Tiger Team enablement initiative for 250+ AEs, launching and scaling release enablement sessions for SEs, and serving as Lead Demo Driver for the SMB keynote at World Tour NYC. Her strategic account leadership was further demonstrated through a highly successful custom Agentforce + Data360 workshop for LightEdge Solutions that became a benchmark engagement internally and externally.`,
+  executiveSummary: `Palakk Shrivastava's performance as a Senior Solution Engineer, combined with her leadership impact and ability to scale enablement across the organization, makes her a strong candidate for promotion to Lead SE. Over 3 years and 9 months at Salesforce, Palakk has consistently delivered exceptional business results, closing $6.05M in ACV through FY27 Q1 while pioneering several first-of-their-kind wins, including the first Agentforce for Service deal in SMB and the first Einstein 1 Field Service and Marketing Cloud Growth deals company-wide. Beyond her individual success, she has demonstrated Lead SE-level influence by leading the Data360 Tiger Team enablement initiative for 250+ AEs, launching and scaling release enablement sessions for SEs, and serving as Lead Demo Driver for the SMB keynote at World Tour NYC. Her strategic account leadership was further demonstrated through a highly successful custom Agentforce + Data360 workshop for LightEdge Solutions that became a benchmark engagement internally and externally.`,
 
   roleDescription: `I am a Senior Account SE for TMT CMRCL AMER at Salesforce. I partner closely with my AEs, solutions leadership, and extended SE ecosystem to ensure we deliver great customer engagements and drive meaningful revenue. My priority is consistent, adaptable performance — showing up every quarter with strong ACV, deep product knowledge, and a genuine desire to elevate everyone around me.`,
 
@@ -27,10 +27,11 @@ const promotionData = {
   ],
 
   acvByYear: [
+    { year: "FY2027", total: "$142K", quarters: [{ q: "Q1", amount: "$142K", note: "" }], openPipe: "$693K", openPipeLabel: "Open Pipe Q2" },
     { year: "FY2026", total: "$1.4M", quarters: [] },
     {
       year: "FY2025",
-      total: "$2.2M",
+      total: "$2.6M",
       quarters: [
         { q: "Q1", amount: "$563K", note: "#1 in SB, Top 5 in SMB" },
         { q: "Q2", amount: "$517K", note: "" },
@@ -42,8 +43,8 @@ const promotionData = {
   ],
 
   highlights: [
-    { label: "Total ACV", value: "$5.8M", subtitle: "through FY27 Q1" },
-    { label: "Award", value: "Solutions MVP", subtitle: "Oct FY26" },
+    { label: "Total ACV", value: "$6.05M", subtitle: "through FY27 Q1" },
+    { label: "Award", value: "Solutions\nMVP", subtitle: "Oct FY26" },
     { label: "AEs Enabled", value: "250+", subtitle: "AEs | 15+ sessions FY26" },
     { label: "SEs Enabled", value: "100+", subtitle: "SEs | 3+ sessions FY26" },
     { label: "Tenure", value: "3Y 9M", subtitle: "at Salesforce" },
