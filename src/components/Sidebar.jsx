@@ -16,6 +16,7 @@ import {
   Handshake,
   Heart,
   Wrench,
+  Rocket,
 } from "lucide-react";
 
 const sections = [
@@ -28,8 +29,8 @@ const sections = [
   { id: "collaborative", label: "Collaborative", icon: Handshake },
   { id: "mentorship", label: "Mentorship", icon: Heart },
   { id: "technical", label: "Technical Expertise", icon: Wrench },
-  { id: "testimonials", label: "Testimonials", icon: MessageSquareQuote },
   { id: "timeline", label: "Journey", icon: Clock },
+  { id: "looking-ahead", label: "Looking Ahead", icon: Rocket },
 ];
 
 export default function Sidebar() {

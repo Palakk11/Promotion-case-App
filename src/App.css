@@ -973,6 +973,58 @@
   color: var(--text-muted);
 }
 
+/* ========== LOOKING AHEAD ========== */
+.looking-ahead-intro {
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 28px;
+  line-height: 1.7;
+}
+
+.looking-ahead-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.looking-ahead-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 24px;
+  transition: all 0.3s;
+}
+
+.looking-ahead-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.looking-ahead-icon {
+  color: var(--accent-light);
+  margin-bottom: 16px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-glow);
+  border-radius: 10px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.looking-ahead-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.looking-ahead-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
 /* ========== FOOTER ========== */
 .app-footer {
   padding: 40px 0;

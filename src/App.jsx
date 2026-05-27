@@ -12,6 +12,7 @@ import Collaborative from "./components/Collaborative";
 import Mentorship from "./components/Mentorship";
 import TechnicalExpertise from "./components/TechnicalExpertise";
 import Timeline from "./components/Timeline";
+import LookingAhead from "./components/LookingAhead";
 import promotionData from "./data/promotionData";
 import "./App.css";
 
@@ -36,6 +37,7 @@ function App() {
         <Mentorship items={promotionData.mentorship} />
         <TechnicalExpertise deals={promotionData.technicalExpertise} />
         <Timeline careerJourney={promotionData.careerJourney} />
+        <LookingAhead />
         <footer className="app-footer">
           <p>Palakk Shrivastava — Lead SE Promotion Case — Draft 1 — May 2026</p>
         </footer>
