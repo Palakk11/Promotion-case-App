@@ -463,6 +463,36 @@
   color: var(--text-muted);
 }
 
+.preamble-pillars {
+  display: flex;
+  gap: 10px;
+  margin: 12px 0 16px;
+}
+
+.preamble-pillar {
+  flex: 1;
+  padding: 10px 14px;
+  background: var(--accent-glow);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-light);
+  text-align: center;
+}
+
+.preamble-callout {
+  margin-top: 20px;
+  padding: 14px 18px;
+  background: rgba(59, 130, 246, 0.06);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+  font-style: italic;
+}
+
 /* Competency Table */
 .competency-table-wrapper {
   overflow-x: auto;

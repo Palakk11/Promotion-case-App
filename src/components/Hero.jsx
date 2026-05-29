@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { TrendingUp, Calendar, Building2, Sparkles } from "lucide-react";
+import { TrendingUp, Calendar, Building2 } from "lucide-react";
 
 export default function Hero({ data }) {
-  const { candidate, executiveSummary, roleDescription, roleResponsibilities, firstOfKindWins } = data;
+  const { candidate, executiveSummary } = data;
 
   return (
     <section id="hero" className="hero-section">
@@ -51,14 +51,6 @@ export default function Hero({ data }) {
           <li><strong>Collaboration</strong> — multiplying impact beyond her own deals, fostering shared success that outlasts any single quarter.</li>
         </ul>
 
-        <div className="first-of-kind">
-          <h4><Sparkles size={16} /> First-of-Their-Kind Wins</h4>
-          <div className="firsts-list">
-            {firstOfKindWins.map((w, i) => (
-              <span key={i} className="first-badge">{w}</span>
-            ))}
-          </div>
-        </div>
       </motion.div>
 
       <div className="hero-gradient-orb orb-1" />

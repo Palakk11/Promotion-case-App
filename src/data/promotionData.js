@@ -11,7 +11,7 @@ const promotionData = {
     slackUrl: "https://salesforce.enterprise.slack.com/team/U03A3NRRUBY",
   },
 
-  executiveSummary: `Palakk Shrivastava has spent 3 years and 9 months at Salesforce turning ambiguity into certainty — closing $6.05M in ACV through FY27 Q1, pioneering three first-of-their-kind wins, and consistently showing up as a multiplier for the people and teams around her.\n\nAs a Senior Account SE for TMT CMRCL AMER, she owns a high-volume book across 2 RVPs — but her impact extends well beyond her own deals. From enabling 250+ AEs through the Data360 Tiger Team, to delivering the SMB keynote demo at World Tour NYC, to building a customer workshop that LightEdge sent to ServiceNow to replicate — Palakk operates at Lead level because that's simply how she works.`,
+  executiveSummary: `Palakk Shrivastava has spent 3 years and 9 months at Salesforce turning ambiguity into certainty — consistently showing up as a multiplier for the people and teams around her. Her approach is grounded in core values she truly believes in and lives every day.`,
 
   roleDescription: `I am a Senior Account SE for TMT CMRCL AMER at Salesforce. I partner closely with my AEs, solutions leadership, and extended SE ecosystem to ensure we deliver great customer engagements and drive meaningful revenue. My priority is consistent, adaptable performance — showing up every quarter with strong ACV, deep product knowledge, and a genuine desire to elevate everyone around me.`,
 
