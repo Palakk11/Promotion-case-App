@@ -33,7 +33,7 @@ function AnimatedValue({ value, isVisible }) {
   return <span className="metric-value">{display}</span>;
 }
 
-export default function MetricsDashboard({ highlights, blackbelts, products }) {
+export default function MetricsDashboard({ highlights, blackbelts, products, certifications }) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -49,8 +49,10 @@ export default function MetricsDashboard({ highlights, blackbelts, products }) {
   return (
     <section id="metrics" className="section">
       <div className="section-header">
-        <h2>Impact at a Glance</h2>
-        <p className="section-subtitle">Key performance indicators demonstrating consistent above-level performance</p>
+        <h2>Talent Readiness</h2>
+        <p className="section-subtitle">
+          A consistent pattern of above-level performance across business results, enablement, and strategic ownership.
+        </p>
       </div>
 
       <div className="metrics-grid" ref={ref}>
@@ -70,7 +72,7 @@ export default function MetricsDashboard({ highlights, blackbelts, products }) {
         ))}
       </div>
 
-      <div className="badges-section">
+      <div className="badges-section" style={{ marginTop: 28 }}>
         <div className="badges-group">
           <h4>Blackbelts</h4>
           <div className="badge-list">
@@ -88,6 +90,27 @@ export default function MetricsDashboard({ highlights, blackbelts, products }) {
           </div>
         </div>
       </div>
+
+      {certifications && (
+        <div className="cert-grid" style={{ marginTop: 28 }}>
+          {certifications.map((cert, i) => (
+            <motion.div
+              key={i}
+              className="cert-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+            >
+              <div className="cert-badge-circle">{cert.badge}</div>
+              <div className="cert-content">
+                <h3>{cert.title}</h3>
+                <p>{cert.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      )}
     </section>
   );
 }

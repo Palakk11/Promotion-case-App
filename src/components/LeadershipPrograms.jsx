@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle2, Zap } from "lucide-react";
+import { CheckCircle2, Zap, ExternalLink } from "lucide-react";
 
 export default function LeadershipPrograms({ leadershipData }) {
   return (
@@ -47,6 +47,31 @@ export default function LeadershipPrograms({ leadershipData }) {
             <div className="program-outcome">
               <strong>Outcome:</strong> {prog.outcome}
             </div>
+
+            {prog.link && (
+              <a href={prog.link.url} target="_blank" rel="noopener noreferrer" className="program-link">
+                <ExternalLink size={14} />
+                {prog.link.label}
+              </a>
+            )}
+
+            {prog.image && (
+              <div className="program-image">
+                <img src={prog.image} alt={prog.title} />
+                {prog.imageCaption && <span className="program-image-caption">{prog.imageCaption}</span>}
+              </div>
+            )}
+
+            {prog.images && (
+              <div className="program-images">
+                {prog.images.map((img, j) => (
+                  <div key={j} className="program-image">
+                    <img src={img.src} alt={img.caption || prog.title} />
+                    {img.caption && <span className="program-image-caption">{img.caption}</span>}
+                  </div>
+                ))}
+              </div>
+            )}
           </motion.div>
         ))}
       </div>

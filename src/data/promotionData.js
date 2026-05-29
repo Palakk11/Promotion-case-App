@@ -11,7 +11,7 @@ const promotionData = {
     slackUrl: "https://salesforce.enterprise.slack.com/team/U03A3NRRUBY",
   },
 
-  executiveSummary: `Palakk Shrivastava's performance as a Senior Solution Engineer, combined with her leadership impact and ability to scale enablement across the organization, makes her a strong candidate for promotion to Lead SE. Over 3 years and 9 months at Salesforce, Palakk has consistently delivered exceptional business results, closing $6.05M in ACV through FY27 Q1 while pioneering several first-of-their-kind wins, including the first Agentforce for Service deal in SMB and the first Einstein 1 Field Service and Marketing Cloud Growth deals company-wide. Beyond her individual success, she has demonstrated Lead SE-level influence by leading the Data360 Tiger Team enablement initiative for 250+ AEs, launching and scaling release enablement sessions for SEs, and serving as Lead Demo Driver for the SMB keynote at World Tour NYC. Her strategic account leadership was further demonstrated through a highly successful custom Agentforce + Data360 workshop for LightEdge Solutions that became a benchmark engagement internally and externally.`,
+  executiveSummary: `Palakk Shrivastava has spent 3 years and 9 months at Salesforce turning ambiguity into certainty — closing $6.05M in ACV through FY27 Q1, pioneering three first-of-their-kind wins, and consistently showing up as a multiplier for the people and teams around her.\n\nAs a Senior Account SE for TMT CMRCL AMER, she owns a high-volume book across 2 RVPs — but her impact extends well beyond her own deals. From enabling 250+ AEs through the Data360 Tiger Team, to delivering the SMB keynote demo at World Tour NYC, to building a customer workshop that LightEdge sent to ServiceNow to replicate — Palakk operates at Lead level because that's simply how she works.`,
 
   roleDescription: `I am a Senior Account SE for TMT CMRCL AMER at Salesforce. I partner closely with my AEs, solutions leadership, and extended SE ecosystem to ensure we deliver great customer engagements and drive meaningful revenue. My priority is consistent, adaptable performance — showing up every quarter with strong ACV, deep product knowledge, and a genuine desire to elevate everyone around me.`,
 
@@ -22,8 +22,32 @@ const promotionData = {
   ],
 
   careerJourney: [
-    { role: "Senior Account SE, TMT CMRCL", period: "Feb 2025 – Present", duration: "1 Year 4 Months" },
-    { role: "Solution Engineer, SMB", period: "Aug 2022 – Jan 2025", duration: "2 Years 6 Months" },
+    {
+      role: "Senior Account SE, TMT CMRCL",
+      period: "Feb 2025 – Present",
+      duration: "1 Year 4 Months",
+      milestones: [
+        "LightEdge Agentforce + Data360 workshop — customer sent format to ServiceNow to replicate",
+        "PerfectVision $631K attrition save — reframed renewal as expansion",
+        "Mastering the Agentic Contact Center — self-nominated for VP-sponsored roadshow",
+        "Citizen Architect certified — applied in first week on LightEdge account",
+      ],
+    },
+    {
+      role: "Solution Engineer, SMB",
+      period: "Aug 2022 – Jan 2025",
+      duration: "2 Years 6 Months",
+      milestones: [
+        "Solutions MVP — Oct FY26",
+        "World Tour NYC SMB keynote demo driver — 200+ live, 270 VOD views",
+        "Data360 Tiger Team — led Sales & Solutions pillar, enabled 250+ AEs",
+        "First Agentforce for Service deal in SMB",
+        "First Einstein 1 Field Service deal company-wide",
+        "First Marketing Cloud Growth deal company-wide",
+        "BVS Peer Certified — first cohort",
+        "$4.5M ACV closed across FY23–FY25",
+      ],
+    },
   ],
 
   acvByYear: [
@@ -93,11 +117,23 @@ const promotionData = {
   dealExcellence: {
     coreValue: "Customer Focus, Trust",
     summary: `In FY27 Q1, Palakk demonstrated the ownership, technical depth, and cross-functional leadership that define a Lead SE. She doesn't demo products — she builds trust, and adapts as the business evolves with the NNAOV model and AI landscape. Her approach starts with deep discovery, connecting Salesforce's solutions to each customer's specific business outcomes and industry context.`,
+    shoutouts: [
+      { src: "/Promotion-case-App/images/shoutouts/David.png", caption: "David Chen & Eddie Prasch — shoutout for crushing the Sales & Service demo on a $53K Commerce deal" },
+      { src: "/Promotion-case-App/images/shoutouts/Lindsay.png", caption: "Lindsay Hawxhurst — $52K big deal alert, first week of the quarter" },
+      { src: "/Promotion-case-App/images/shoutouts/Jeet.png", caption: "Jeet Shah — congratulations on closing Agentforce 1 + Rev Cloud" },
+    ],
     deals: [
       {
         customer: "LightEdge Solutions",
         subtitle: "Agentforce & Data360 Workshop — April 2026",
         type: "Strategic Engagement",
+        images: [
+          { src: "/Promotion-case-App/images/shoutouts/Lightedge.png", caption: "Riley Rhodes — celebrating a Wild Success with the LightEdge workshop" },
+          { src: "/Promotion-case-App/images/shoutouts/Lightedge2.png", caption: "Nick Pauze — HUGE shoutout to the extended team, special callout for Palakk" },
+          { src: "/Promotion-case-App/images/shoutouts/Lightedge3.png", caption: "Nick Pauze — shoutout for demos, customer asked \"Why didn't ServiceNow do this for us?\"" },
+          { src: "/Promotion-case-App/images/shoutouts/Lightedge4.png", caption: "LightEdge customer email — \"The Salesforce team did a great job on the workshop\"" },
+          { src: "/Promotion-case-App/images/shoutouts/Lightedge5.png", caption: "Paul Eaklor — \"Riley is lucky to have you. It shows how much you are invested\"" },
+        ],
         impacts: [
           "Over $1M in pipeline generated in Agentforce and Data Cloud",
           "Closed momentum deal in 3 weeks, new product — $80K ACV",
@@ -121,6 +157,10 @@ const promotionData = {
         customer: "Perfect Vision",
         subtitle: "NNAOV — Saved Attrition — April 2026",
         type: "Attrition Save + Expansion",
+        images: [
+          { src: "/Promotion-case-App/images/shoutouts/PV.png", caption: "Christine Magnuson — PerfectVision highlighted as an Attrition Save on team call" },
+          { src: "/Promotion-case-App/images/shoutouts/pv2.png", caption: "Deal Recap — PerfectVision featured as a Save alongside LightEdge as a Win" },
+        ],
         impacts: [
           "Contributed in leading strategy and identifying whitespace for additional products",
           "Saved $631K in forecasted attrition",
@@ -135,6 +175,34 @@ const promotionData = {
         ],
         outcome: "Attrition save acknowledged publicly — on May 18, 2026, leadership (Christine) called out the Perfect Vision attrition save on a team call.",
       },
+      {
+        customer: "C3 Ventures",
+        subtitle: "Data360 + Agentforce — FY26 Q3",
+        type: "Multi-Cloud Expansion",
+        images: [
+          { src: "/Promotion-case-App/images/shoutouts/C3.jpg", caption: "David Chen & Bobby Gagnon — \"masterful job presenting Data Cloud and AF to C3\"" },
+          { src: "/Promotion-case-App/images/shoutouts/Zach .png", caption: "Zach Yocca — deal closed ~$75K, \"being an SE is a team sport here at Salesforce\"" },
+        ],
+        impacts: [
+          "Closed $74K ACV in Data360",
+          "Shield deal in-flight for Q4",
+          "Drove single-product renewal to multi-cloud expansion",
+        ],
+        story: "Orchestrated this high-visibility, big-bet SMB account to close Data360 in Q3. Identified expansion opportunity beyond the existing renewal, positioning Agentforce and Shield as natural next steps in the customer's platform journey.",
+        outcome: "$74K ACV closed | Multi-cloud expansion from single-product renewal",
+      },
+      {
+        customer: "NetSpark IP & Telecom",
+        subtitle: "Sales Cloud + Spiff — FY26 Q1",
+        type: "Technical Win",
+        impacts: [
+          "Closed $49K ACV",
+          "Built highly customized industry-specific demo",
+          "Rapid orchestration during complex account handover",
+        ],
+        story: "Navigated a complex account handover by quickly ramping on account context and building a highly customized, industry-specific Sales Cloud demo. Identified Spiff as the right solution fit for the customer's compensation challenges, closing the deal under a compressed timeline.",
+        outcome: "$49K ACV closed | Industry-specific demo built under compressed timeline",
+      },
     ],
   },
 
@@ -146,6 +214,9 @@ const promotionData = {
         title: "Lead Demo Driver — World Tour NYC SMB Keynote",
         period: "FY26",
         coreSkill: "Managing by Influence",
+        link: { url: "https://www.salesforce.com/plus/experience/world_tour/series/best_of_agentforce_world_tour_nyc_spring_2025/episode/episode-s1e3", label: "Watch the Demo" },
+        image: "/Promotion-case-App/images/achievements/WTNYC.png",
+        imageCaption: "Shoutout from David Chen — crushing the demo at World Tour NYC",
         impacts: [
           "Going above and beyond as a Sr. SE",
           "Built a scalable demo org resource reused at Dreamforce FY26",
@@ -162,6 +233,10 @@ const promotionData = {
         title: "SMB Data360 Tiger Team — Led Sales & Solutions Pillar",
         period: "FY26 (May 2025 – Jan 2026)",
         coreSkill: "Enablement at Scale",
+        images: [
+          { src: "/Promotion-case-App/images/shoutouts/Tigerteam.png", caption: "Shoutout from Christie Nelson — recognizing Tiger Team enablement contributions" },
+          { src: "/Promotion-case-App/images/shoutouts/FY27 Kickoff.png", caption: "Named FY26 Top Field Representative at FY27 Kickoff" },
+        ],
         impacts: [
           "Ran onboarding program from Aug 2025–Jan 2026 impacting 250+ AEs across 8+ sessions",
           "Led a team of 5 SEs under the Sales & Solutions pillar",
@@ -180,6 +255,8 @@ const promotionData = {
         title: "Palakk's Potluck — SE Release Enablement Program",
         period: "FY26 (May – Dec)",
         coreSkill: "Culture Building",
+        image: "/Promotion-case-App/images/shoutouts/Potluck.png",
+        imageCaption: "Palakk's Potluck — peer-led release enablement session with 40+ SEs",
         impacts: [
           "40+ SEs enabled across 2 enablement sessions",
           "Recognized as a Culture Builder",
@@ -219,6 +296,10 @@ const promotionData = {
       {
         title: "Possible Missionforce — Lead Content Creator & Presenter",
         subtitle: "FY26 (Dec – Jan)",
+        images: [
+          { src: "/Promotion-case-App/images/shoutouts/Missionforce.png", caption: "Featured as speaker at the Agentic Contact Center roadshow" },
+          { src: "/Promotion-case-App/images/shoutouts/Rebecca Missionforce.png", caption: "Rebecca Macias — shoutout for MissionForce Solutions Enablement" },
+        ],
         impacts: [
           "Created enablement content for Agentforce for Service — 2 sessions delivered",
           "100+ SEs enabled across SMB",

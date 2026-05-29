@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { CheckCircle2, Zap } from "lucide-react";
+import { CheckCircle2, Zap, ExternalLink } from "lucide-react";
 
 export default function Collaborative({ collabData }) {
   return (
     <section id="collaborative" className="section">
       <div className="section-header">
-        <h2>Collaborative Impact</h2>
+        <h2>Action Oriented</h2>
         <div className="core-value-badge">Core Value: {collabData.coreValue}</div>
         <p className="section-subtitle">{collabData.summary}</p>
       </div>
@@ -44,6 +44,31 @@ export default function Collaborative({ collabData }) {
             {item.whyItMattered && (
               <div className="why-it-mattered">
                 <strong>Why it mattered:</strong> {item.whyItMattered}
+              </div>
+            )}
+
+            {item.link && (
+              <a href={item.link.url} target="_blank" rel="noopener noreferrer" className="program-link">
+                <ExternalLink size={14} />
+                {item.link.label}
+              </a>
+            )}
+
+            {item.image && (
+              <div className="program-image">
+                <img src={item.image} alt={item.title} />
+                {item.imageCaption && <span className="program-image-caption">{item.imageCaption}</span>}
+              </div>
+            )}
+
+            {item.images && (
+              <div className="program-images">
+                {item.images.map((img, j) => (
+                  <div key={j} className="program-image">
+                    <img src={img.src} alt={img.caption || item.title} />
+                    {img.caption && <span className="program-image-caption">{img.caption}</span>}
+                  </div>
+                ))}
               </div>
             )}
           </motion.div>

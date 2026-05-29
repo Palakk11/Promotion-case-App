@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Quote, CheckCircle2, Zap, ChevronDown } from "lucide-react";
+import { Quote, CheckCircle2, Zap, ChevronDown, ExternalLink } from "lucide-react";
 
 function DealCard({ deal, i }) {
   const [expanded, setExpanded] = useState(false);
@@ -76,12 +76,38 @@ function DealCard({ deal, i }) {
             <div className="deal-outcome">
               <strong>Outcome:</strong> {deal.outcome}
             </div>
+
+            {deal.image && (
+              <div className="program-image">
+                <img src={deal.image} alt={deal.customer} />
+                {deal.imageCaption && <span className="program-image-caption">{deal.imageCaption}</span>}
+              </div>
+            )}
+
+            {deal.images && (
+              <div className="program-images">
+                {deal.images.map((img, j) => (
+                  <div key={j} className="program-image">
+                    <img src={img.src} alt={img.caption || deal.customer} />
+                    {img.caption && <span className="program-image-caption">{img.caption}</span>}
+                  </div>
+                ))}
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
 
       {!expanded && (
-        <div className="deal-peek">Click to expand full details</div>
+        <div className="deal-peek-row">
+          <span className="deal-peek">Click to expand full details</span>
+          {deal.link && (
+            <a href={deal.link.url} target="_blank" rel="noopener noreferrer" className="program-link" onClick={(e) => e.stopPropagation()}>
+              <ExternalLink size={14} />
+              {deal.link.label}
+            </a>
+          )}
+        </div>
       )}
     </motion.div>
   );
@@ -101,6 +127,27 @@ export default function DealExcellence({ dealData }) {
           <DealCard key={i} deal={deal} i={i} />
         ))}
       </div>
+
+      {dealData.shoutouts && (
+        <div className="shoutouts-gallery">
+          <h4>Shoutouts & Recognition</h4>
+          <div className="shoutouts-grid">
+            {dealData.shoutouts.map((img, i) => (
+              <motion.div
+                key={i}
+                className="program-image"
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.4 }}
+              >
+                <img src={img.src} alt={img.caption} />
+                {img.caption && <span className="program-image-caption">{img.caption}</span>}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      )}
     </section>
   );
 }

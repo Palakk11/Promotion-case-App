@@ -17,18 +17,19 @@ import {
   Heart,
   Wrench,
   Rocket,
+  FileText,
 } from "lucide-react";
 
 const sections = [
   { id: "hero", label: "Overview", icon: User },
-  { id: "metrics", label: "Key Metrics", icon: BarChart3 },
+  { id: "preamble", label: "Preamble", icon: FileText },
+  { id: "competencies", label: "Core Competencies", icon: BookOpen },
+  { id: "metrics", label: "Talent Readiness", icon: BarChart3 },
   { id: "acv", label: "ACV Track Record", icon: Target },
-  { id: "certifications", label: "Certifications", icon: ShieldCheck },
   { id: "deals", label: "Deal Excellence", icon: Briefcase },
   { id: "leadership", label: "Leadership & Programs", icon: Award },
-  { id: "collaborative", label: "Collaborative", icon: Handshake },
+  { id: "collaborative", label: "Action Oriented", icon: Handshake },
   { id: "mentorship", label: "Mentorship", icon: Heart },
-  { id: "technical", label: "Technical Expertise", icon: Wrench },
   { id: "timeline", label: "Journey", icon: Clock },
   { id: "looking-ahead", label: "Looking Ahead", icon: Rocket },
 ];
