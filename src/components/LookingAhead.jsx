@@ -36,8 +36,8 @@ export default function LookingAhead() {
       </div>
 
       <p className="looking-ahead-intro">
-        As a Lead SE, I want to expand on things beyond what I can already do
-        today.
+        As a Lead SE, I'm focused on deepening the impact I already drive across
+        the team and the business:
       </p>
 
       <div className="looking-ahead-grid">

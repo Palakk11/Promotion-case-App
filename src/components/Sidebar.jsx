@@ -22,7 +22,7 @@ import {
 
 const sections = [
   { id: "hero", label: "Overview", icon: User },
-  { id: "preamble", label: "Preamble", icon: FileText },
+  { id: "preamble", label: "Business Case", icon: FileText },
   { id: "competencies", label: "Core Competencies", icon: BookOpen },
   { id: "metrics", label: "Talent Readiness", icon: BarChart3 },
   { id: "acv", label: "ACV Track Record", icon: Target },
