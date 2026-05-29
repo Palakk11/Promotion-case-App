@@ -137,7 +137,7 @@
 .hero-section {
   padding: 60px 0 48px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-content {
@@ -307,6 +307,9 @@
   border: 1px solid rgba(245, 158, 11, 0.25);
   border-radius: 12px;
   padding: 20px 24px;
+  margin-top: 24px;
+  position: relative;
+  z-index: 2;
 }
 
 .first-of-kind h4 {
