@@ -1,6 +1,5 @@
 import Sidebar from "./components/Sidebar";
 import ScrollProgress from "./components/ScrollProgress";
-import FloatingStats from "./components/FloatingStats";
 import Hero from "./components/Hero";
 import Preamble from "./components/Preamble";
 import MetricsDashboard from "./components/MetricsDashboard";
@@ -41,7 +40,6 @@ function App() {
           <p>Palakk Shrivastava — Lead SE Promotion Case — Confidential — May 2026</p>
         </footer>
       </main>
-      <FloatingStats highlights={promotionData.highlights} />
     </div>
   );
 }

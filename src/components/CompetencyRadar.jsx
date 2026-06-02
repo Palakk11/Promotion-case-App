@@ -60,13 +60,6 @@ const competencyGaps = [
       "Tiger Team: managed deliverables across 5 SEs and 8+ sessions over 9 months. LightEdge: orchestrated pre-workshop alignment series under compressed timeline in first week on account.",
   },
   {
-    competency: "Solution Orientation",
-    seniorLevel: "Intermediate",
-    leadLevel: "Advanced",
-    evidence:
-      "$6.05M ACV maintained while simultaneously leading Tiger Team, World Tour keynote, Missionforce, and Palakk's Potluck. Self-nominated for Agentic Contact Center roadshow without being asked.",
-  },
-  {
     competency: "Customer Feedback",
     seniorLevel: "Standard",
     leadLevel: "Advanced",

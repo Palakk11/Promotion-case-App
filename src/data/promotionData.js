@@ -51,19 +51,16 @@ const promotionData = {
   ],
 
   acvByYear: [
-    { year: "FY2027", total: "$142K", quarters: [{ q: "Q1", amount: "$142K", note: "" }], openPipe: "$693K", openPipeLabel: "Open Pipe Q2" },
+    { year: "FY2027", total: "$142K", quarters: [], openPipe: "$693K", openPipeLabel: "Open Pipe Q2" },
     { year: "FY2026", total: "$1.4M", quarters: [] },
     {
       year: "FY2025",
       total: "$2.6M",
-      quarters: [
-        { q: "Q1", amount: "$563K", note: "#1 in SB, Top 5 in SMB" },
-        { q: "Q2", amount: "$517K", note: "" },
-        { q: "Q3", amount: "$559K", note: "#2 in SB" },
-      ],
+      subtitle: "#2 in SB",
+      quarters: [],
     },
-    { year: "FY2024", total: "$1.37M", quarters: [{ q: "Full Year", amount: "$1.37M", note: "" }] },
-    { year: "FY2023", total: "$539K", quarters: [{ q: "Q4", amount: "$539K", note: "" }] },
+    { year: "FY2024", total: "$1.37M", quarters: [] },
+    { year: "FY2023", total: "$539K", quarters: [] },
   ],
 
   highlights: [
@@ -121,6 +118,8 @@ const promotionData = {
       { src: "/Promotion-case-App/images/shoutouts/David.png", caption: "David Chen & Eddie Prasch — shoutout for crushing the Sales & Service demo on a $53K Commerce deal" },
       { src: "/Promotion-case-App/images/shoutouts/Lindsay.png", caption: "Lindsay Hawxhurst — $52K big deal alert, first week of the quarter" },
       { src: "/Promotion-case-App/images/shoutouts/Jeet.png", caption: "Jeet Shah — congratulations on closing Agentforce 1 + Rev Cloud" },
+      { src: "/Promotion-case-App/images/shoutouts/chris decker.jpg", caption: "Chris Decker — celebrating TMT Consumption Go Lives and Attrition Saves including PerfectVision" },
+      { src: "/Promotion-case-App/images/shoutouts/Eddie-Prasch-Deal-shoutout.jpg", caption: "Eddie Prasch — \"Big thank you to Palakk for her support, could not have done without you!\" — $32K Agentforce + RevCloud upgrade win" },
     ],
     deals: [
       {
@@ -215,8 +214,10 @@ const promotionData = {
         period: "FY26",
         coreSkill: "Managing by Influence",
         link: { url: "https://www.salesforce.com/plus/experience/world_tour/series/best_of_agentforce_world_tour_nyc_spring_2025/episode/episode-s1e3", label: "Watch the Demo" },
-        image: "/Promotion-case-App/images/achievements/WTNYC.png",
-        imageCaption: "Shoutout from David Chen — crushing the demo at World Tour NYC",
+        images: [
+          { src: "/Promotion-case-App/images/achievements/WTNYC.png", caption: "Shoutout from David Chen — crushing the demo at World Tour NYC" },
+          { src: "/Promotion-case-App/images/shoutouts/Laura Maitz WTNY-smb-global.jpg", caption: "Laura Maitz — highlighting Palakk's killer demos and roundtable leadership at World Tour NYC" },
+        ],
         impacts: [
           "Going above and beyond as a Sr. SE",
           "Built a scalable demo org resource reused at Dreamforce FY26",
@@ -299,6 +300,7 @@ const promotionData = {
         images: [
           { src: "/Promotion-case-App/images/shoutouts/Missionforce.png", caption: "Featured as speaker at the Agentic Contact Center roadshow" },
           { src: "/Promotion-case-App/images/shoutouts/Rebecca Missionforce.png", caption: "Rebecca Macias — shoutout for MissionForce Solutions Enablement" },
+          { src: "/Promotion-case-App/images/shoutouts/Missionforce Peer shoutout .jpg", caption: "Jeet Shah — \"HUGE SHOUTOUT to Palakk for absolutely crushing it\" presenting Service Cloud + Data Cloud at MissionForce Enablement" },
         ],
         impacts: [
           "Created enablement content for Agentforce for Service — 2 sessions delivered",
@@ -329,6 +331,9 @@ const promotionData = {
     {
       title: '"Careers at Salesforce" Panelist — UT Dallas (FY24)',
       description: "Represented Salesforce externally as guest panelist, communicating the SE career path and culture to 50+ students, faculty, and professionals. Participated through Trailhead Academy VTO.",
+    },
+    {
+      image: { src: "/Promotion-case-App/images/shoutouts/Mentorship-shoutout.jpg" },
     },
   ],
 

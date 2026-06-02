@@ -13,15 +13,20 @@ export default function Mentorship({ items }) {
         {items.map((item, i) => (
           <motion.div
             key={i}
-            className="mentorship-card"
+            className={`mentorship-card${!item.title ? ' mentorship-card--image-only' : ''}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1, duration: 0.5 }}
           >
-            <Heart size={20} className="mentorship-icon" />
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
+            {item.title && <Heart size={20} className="mentorship-icon" />}
+            {item.title && <h3>{item.title}</h3>}
+            {item.description && <p>{item.description}</p>}
+            {item.image && (
+              <div className="mentorship-image">
+                <img src={item.image.src} alt={item.title || "Recognition"} />
+              </div>
+            )}
           </motion.div>
         ))}
       </div>
