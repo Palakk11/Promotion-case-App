@@ -5,13 +5,13 @@ const promotionData = {
     targetTitle: "Lead Solution Engineer",
     team: "TMT CMRCL AMER — Salesforce",
     manager: "[Manager Name]",
-    tenure: "3 Years 9 Months",
-    date: "May 2026",
+    tenure: "4 Years 2 Months",
+    date: "October 2026",
     tagline: "Turn Ambiguity into Certainty",
     slackUrl: "https://salesforce.enterprise.slack.com/team/U03A3NRRUBY",
   },
 
-  executiveSummary: `Palakk Shrivastava has spent 3 years and 9 months at Salesforce turning ambiguity into certainty — consistently showing up as a multiplier for the people and teams around her. Her approach is grounded in core values she truly believes in and lives every day.`,
+  executiveSummary: `Palakk Shrivastava has spent 4 years at Salesforce turning ambiguity into certainty — consistently showing up as a multiplier for the people and teams around her. Her approach is grounded in core values she truly believes in and lives every day.`,
 
   roleDescription: `I am a Senior Account SE for TMT CMRCL AMER at Salesforce. I partner closely with my AEs, solutions leadership, and extended SE ecosystem to ensure we deliver great customer engagements and drive meaningful revenue. My priority is consistent, adaptable performance — showing up every quarter with strong ACV, deep product knowledge, and a genuine desire to elevate everyone around me.`,
 
@@ -25,8 +25,12 @@ const promotionData = {
     {
       role: "Senior Account SE, TMT CMRCL",
       period: "Feb 2025 – Present",
-      duration: "1 Year 4 Months",
+      duration: "1 Year 8 Months",
       milestones: [
+        "SE of the Quarter — FY27 Q2, Riley Rhodes' team",
+        "Prospecting Agent setup enablement — co-built and recorded in 3 business days for TMT's first Golden Use Case",
+        "NinjaOne AI Day — architected the playbook and presented to 13 RevOps and Data & AI leaders",
+        "Trintech Momentum + Agentforce for Sales pilot — owned the A4S demo and Prospecting Agent activation",
         "LightEdge Agentforce + Data360 workshop — customer sent format to ServiceNow to replicate",
         "PerfectVision $631K attrition save — reframed renewal as expansion",
         "Mastering the Agentic Contact Center — self-nominated for VP-sponsored roadshow",
@@ -51,7 +55,7 @@ const promotionData = {
   ],
 
   acvByYear: [
-    { year: "FY2027", total: "$142K", quarters: [], openPipe: "$693K", openPipeLabel: "Open Pipe Q2" },
+    { year: "FY2027", total: "$1.28M", subtitle: "Q1–Q3 to date", quarters: [] },
     { year: "FY2026", total: "$1.4M", quarters: [] },
     {
       year: "FY2025",
@@ -64,11 +68,12 @@ const promotionData = {
   ],
 
   highlights: [
-    { label: "Total ACV", value: "$6.05M", subtitle: "through FY27 Q1" },
+    { label: "Total ACV", value: "$7.19M", subtitle: "through FY27 Q3" },
+    { label: "Award", value: "SE of the\nQuarter", subtitle: "FY27 Q2" },
     { label: "Award", value: "Solutions\nMVP", subtitle: "Oct FY26" },
     { label: "AEs Enabled", value: "250+", subtitle: "AEs | 15+ sessions FY26" },
     { label: "SEs Enabled", value: "100+", subtitle: "SEs | 3+ sessions FY26" },
-    { label: "Tenure", value: "3Y 9M", subtitle: "at Salesforce" },
+    { label: "Tenure", value: "4Y 2M", subtitle: "at Salesforce" },
   ],
 
   blackbelts: [
@@ -113,8 +118,9 @@ const promotionData = {
 
   dealExcellence: {
     coreValue: "Customer Focus, Trust",
-    summary: `In FY27 Q1, Palakk demonstrated the ownership, technical depth, and cross-functional leadership that define a Lead SE. She doesn't demo products — she builds trust, and adapts as the business evolves with the NNAOV model and AI landscape. Her approach starts with deep discovery, connecting Salesforce's solutions to each customer's specific business outcomes and industry context.`,
+    summary: `Across FY27, Palakk demonstrated the ownership, technical depth, and cross-functional leadership that define a Lead SE. She doesn't demo products — she builds trust, and adapts as the business evolves with the NNAOV model and AI landscape. Her approach starts with deep discovery, connecting Salesforce's solutions to each customer's specific business outcomes and industry context.`,
     shoutouts: [
+      { src: "/Promotion-case-App/images/shoutouts/SE-of-the-quarter.png", caption: "Team Solutioneers — named FY27 SE of the Quarter alongside Chris Decker" },
       { src: "/Promotion-case-App/images/shoutouts/David.png", caption: "David Chen & Eddie Prasch — shoutout for crushing the Sales & Service demo on a $53K Commerce deal" },
       { src: "/Promotion-case-App/images/shoutouts/Lindsay.png", caption: "Lindsay Hawxhurst — $52K big deal alert, first week of the quarter" },
       { src: "/Promotion-case-App/images/shoutouts/Jeet.png", caption: "Jeet Shah — congratulations on closing Agentforce 1 + Rev Cloud" },
@@ -123,10 +129,56 @@ const promotionData = {
     ],
     deals: [
       {
+        customer: "NinjaOne",
+        subtitle: "Agentic Enterprise AI Day — Austin, June 2026",
+        type: "Strategic Engagement",
+        impacts: [
+          "Kicked off the agentic conversation at an account that had been slow to adopt AI",
+          "13 attendees from NinjaOne's RevOps and Data & AI teams engaged for a 4+ hour AI Day",
+          "Opened multiple next steps — Agentforce technical architect engagement, Marketing, Tableau, and ITSM",
+          "Turned around at a pace leadership called \"the exception, not the norm\"",
+        ],
+        story: `NinjaOne — freshly valued at $12.3B after a $400M funding round — had been slow to adopt AI across the organization. The account team set out to host a full AI Day in Austin to help their RevOps and Data & AI teams picture how NinjaOne would run as an Agentic Enterprise. Palakk drove the deep discovery across multiple lines of business, architected the AI Day playbook, and delivered a series of micro-demos curated to NinjaOne's use cases across the 4.5-hour session.`,
+        actions: [
+          "Created the NinjaOne Workshop Playbook to track content, owners, and the deck from day one",
+          "Ran deep discovery with multiple lines of business to shape the agenda around NinjaOne's real use cases",
+          "Built and delivered curated micro-demos across Agentforce and Headless 360 instead of one generic demo",
+          "Jumped on the follow-up request for an Agentforce technical architect and joined the full-team debrief",
+        ],
+        testimonial: {
+          quote: "Palakk did an incredible job driving the deep discovery we needed with multiple lines of business in order to make this a successful event! She was vital architecting the AI Day playbook here and nailing her presentation to the customer!",
+          author: "Seth Elliott, Account Executive",
+        },
+        outcome: "Riley Rhodes: \"I cannot believe how fast you were able to turn this around (exception not the norm team!). This was so well thought out.\" Joshua Sennett: \"Nothing like hosting two very different groups for a 4 hour AI Day and keeping them all engaged!\"",
+      },
+      {
+        customer: "Trintech",
+        subtitle: "Momentum + Agentforce for Sales Pilot — June–August 2026",
+        type: "AI Pilot + Activation",
+        impacts: [
+          "Signed a 10-user Momentum + Agentforce for Sales pilot",
+          "Expansion path to 70 users (+$100.8K ACV) built on proving value in the pilot",
+          "Supported Prospecting Agent activation in Trintech's production org",
+          "CCO called the engagement a \"defining moment\" in Trintech's relationship with Salesforce",
+        ],
+        story: `Trintech's leadership wanted Salesforce to lead on AI, but with outcomes — territory intelligence, automated prospecting, conversation intelligence and rep coaching — not AI for AI's sake. Palakk owned the Agentforce for Sales demo in the executive session, positioned Momentum and Agentforce as complementary rather than overlapping, and stayed aligned to the deal from day one through activation.`,
+        actions: [
+          "Prepared and delivered the Agentforce for Sales demo to the CCO, VP of RevOps, and frontline managers",
+          "Focused follow-up sessions on concrete out-of-the-box use cases like Prospecting Agent and territory enrichment",
+          "Supported Prospecting Agent activation calls alongside the Activation team",
+        ],
+        testimonial: {
+          quote: "She consistently asked the right questions, challenged us to go a layer deeper, and had a great ability to uncover what was really driving a customer's needs rather than simply addressing what was on the surface... She played a meaningful role in helping us navigate and ultimately close several key deals this fiscal year.",
+          author: "Chet Kaiser, Account Executive",
+        },
+        outcome: "Pilot signed and activated; account now tracking toward 60–70 seats at renewal. Chris Decker called out Palakk's back-to-back quarter attrition saves plus the Trintech activation in Q2.",
+      },
+      {
         customer: "LightEdge Solutions",
         subtitle: "Agentforce & Data360 Workshop — April 2026",
         type: "Strategic Engagement",
         images: [
+          { src: "/Promotion-case-App/images/shoutouts/JW-all-hands-A4S.png", caption: "JW all-hands — LightEdge $50K Agentforce for Sales (Momentum) featured in \"Real Deals, Big Impact\"" },
           { src: "/Promotion-case-App/images/shoutouts/Lightedge.png", caption: "Riley Rhodes — celebrating a Wild Success with the LightEdge workshop" },
           { src: "/Promotion-case-App/images/shoutouts/Lightedge2.png", caption: "Nick Pauze — HUGE shoutout to the extended team, special callout for Palakk" },
           { src: "/Promotion-case-App/images/shoutouts/Lightedge3.png", caption: "Nick Pauze — shoutout for demos, customer asked \"Why didn't ServiceNow do this for us?\"" },
@@ -138,6 +190,7 @@ const promotionData = {
           "Closed momentum deal in 3 weeks, new product — $80K ACV",
           "Built trust and changed the course of the relationship",
           "Led from the front",
+          "Follow-on $50K Agentforce for Sales (Momentum) deal closed July 2026",
         ],
         story: `LightEdge Solutions is a high-propensity strategic account in the TMT Commercial space. With a compressed timeline and a new team, Palakk stepped in during her very first week to own the full SE engagement for a 2-day in-person Agentforce + Data360 workshop in Austin. She led voice-of-customer discovery from day one, capturing LightEdge's AI vision, datacenter-specific use cases, and business outcomes to shape the entire workshop narrative. She built a fully custom Agentforce + Data360 demo under a tight timeline, utilizing AI tools like Claude and Cursor, pivoting as requirements evolved.`,
         actions: [
@@ -209,6 +262,28 @@ const promotionData = {
     coreValue: "Curiosity, Multiplier, Proactivity",
     summary: `Palakk's intellectual curiosity and commitment to staying ahead of the product roadmap is one of her most defining qualities. She doesn't wait to be enabled — she ramps first, then enables others through scale programs, often acting as a multiplier. Her deep curiosity about Data360 and Agentforce led her to become the go-to resource for both her AEs and the broader SE org.`,
     programs: [
+      {
+        title: "Prospecting Agent Setup Enablement — TMT's First Golden Use Case",
+        period: "FY27 Q3 (August 2026)",
+        coreSkill: "Building While Selling",
+        impacts: [
+          "Took the idea to a recorded enablement in 3 business days, co-led with Ali Ruther",
+          "Shared across TMT Commercial as Prospecting Agent launched as the org's first Golden Use Case",
+          "Publicly recognized by Brent Healy as \"TMT Commercial leading the way on the future here of building while selling\"",
+          "Invited into the Prospecting Agent / Hunter SME group with Product and PMM",
+        ],
+        details: [
+          "Co-wrote the script and deck, set up Prospecting Agent end to end, and ran the dry runs before recording",
+          "Presented the setup portion of the \"How to Set Up Prospecting Agent\" recording",
+          "Built a Setup Prospecting Agent 101 tracker and a Prospecting Agent talk track canvas for the team",
+          "Took the work to customers — built the Edmentum Unified Prospecting demo flow (Prospecting Agent → Coworker → Piper) and supported LightEdge and Trintech pilots",
+        ],
+        outcome: "Built in 3 business days | Shared across TMT Commercial | Reused in live customer demos. Riley Rhodes: \"Amazing to see this idea come to life in less than a week.\"",
+        images: [
+          { src: "/Promotion-case-App/images/shoutouts/Brent-prospecting-agent.jpg", caption: "Brent Healy — \"Huge shoutout to Palakk and Ali for leading the way and recording the enablement for setting up Prospecting Agent\"" },
+          { src: "/Promotion-case-App/images/shoutouts/Prospecting-agent-golden-use-case.jpg", caption: "Zack Belcher — Prospecting Agent launched as the first Golden Use Case; James Qian thanks Palakk for creating the assets" },
+        ],
+      },
       {
         title: "Lead Demo Driver — World Tour NYC SMB Keynote",
         period: "FY26",

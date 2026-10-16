@@ -78,7 +78,7 @@ const competencyGaps = [
 const competencies = [
   { label: "Technical Depth", score: 95, description: "Multi-cloud expertise across 9+ products, AI-native demo engineering with Claude + Cursor" },
   { label: "Customer Engagement", score: 92, description: "Deep discovery-driven approach — LightEdge workshop became customer benchmark vs. ServiceNow" },
-  { label: "Deal Strategy", score: 93, description: "$6.05M ACV, PerfectVision $631K attrition save, NNAOV navigation" },
+  { label: "Deal Strategy", score: 93, description: "$7.19M ACV, PerfectVision $631K attrition save, NNAOV navigation" },
   { label: "Enablement & Scale", score: 95, description: "250+ AEs enabled via Tiger Team, Palakk's Potluck, D360 Gem deployed org-wide" },
   { label: "Cross-Cloud Expertise", score: 90, description: "Data360, Agentforce, Revenue Cloud, Marketing Cloud, Field Service, Slack, MuleSoft" },
   { label: "Mentorship", score: 87, description: "Trailguide, Peer Cert panelist, Revenue Cloud deal support outside book of business" },

@@ -99,8 +99,8 @@ export default function Preamble() {
         </div>
         <p className="preamble-lead">
           Palakk has consistently
-          delivered exceptional business results, closing <strong>$6.05M in
-          ACV</strong> through FY27 Q1 while pioneering several first-of-their-kind
+          delivered exceptional business results, closing <strong>$7.19M in
+          ACV</strong> through FY27 Q3 while pioneering several first-of-their-kind
           wins. Her strong consulting background, business acumen, and multi-cloud
           expertise across Agentforce, Data360, and the broader product suite —
           combined with a collaborative leadership style and commitment to

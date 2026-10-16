@@ -37,7 +37,7 @@ function App() {
         <Timeline careerJourney={promotionData.careerJourney} />
         <LookingAhead />
         <footer className="app-footer">
-          <p>Palakk Shrivastava — Lead SE Promotion Case — Confidential — May 2026</p>
+          <p>Palakk Shrivastava — Lead SE Promotion Case — Confidential — October 2026</p>
         </footer>
       </main>
     </div>
