@@ -120,6 +120,7 @@ const promotionData = {
     coreValue: "Customer Focus, Trust",
     summary: `Across FY27, Palakk demonstrated the ownership, technical depth, and cross-functional leadership that define a Lead SE. She doesn't demo products — she builds trust, and adapts as the business evolves with the NNAOV model and AI landscape. Her approach starts with deep discovery, connecting Salesforce's solutions to each customer's specific business outcomes and industry context.`,
     shoutouts: [
+      { src: "/Promotion-case-App/images/shoutouts/Top10-Q3-stack-rank.jpg", caption: "Install Base stack rank as of Oct 30, 2026 — top 10 with $1.37M split won and $1.53M pipe" },
       { src: "/Promotion-case-App/images/shoutouts/SE-of-the-quarter.png", caption: "Team Solutioneers — named FY27 SE of the Quarter alongside Chris Decker" },
       { src: "/Promotion-case-App/images/shoutouts/David.png", caption: "David Chen & Eddie Prasch — shoutout for crushing the Sales & Service demo on a $53K Commerce deal" },
       { src: "/Promotion-case-App/images/shoutouts/Lindsay.png", caption: "Lindsay Hawxhurst — $52K big deal alert, first week of the quarter" },
@@ -129,9 +130,40 @@ const promotionData = {
     ],
     deals: [
       {
+        customer: "Storable",
+        subtitle: "Transformation Engagement & Early Renewal — August to October 2026",
+        type: "Strategic Account Transformation",
+        images: [
+          { src: "/Promotion-case-App/images/shoutouts/Storable-Riley.jpg", caption: "Riley Rhodes — \"Palakk has been running an incredibly strategic engagement at Storable\"" },
+        ],
+        impacts: [
+          "$195.8K ACV closed Oct 30: Qualified Premier ($99.9K) and the early renewal bundle ($95.9K)",
+          "Orchestrated the right resource at each stage: Riley Rhodes for executive alignment, plus strategic SEs and technical and enterprise architects",
+          "Renewed early while Intercom Fin was pitching to replace the 261-seat Service Cloud",
+          "Opened Q4 pipeline: SPM ($150K), Agentforce for Sales, Data 360, Experience Cloud",
+        ],
+        story: `I took over Storable in August 2026, as a new SVP of RevOps set out to fix a fragmented stack (two Salesforce orgs, a Zoho org and 20+ integrated tools) and Intercom Fin pitched to replace Service Cloud. I ran the technical side end to end and co-led two of the four transformation workstreams with Riley Rhodes.`,
+        actions: [
+          "Led Service Cloud and architecture discovery; brought in Steve Bilgram for an org health assessment",
+          "Built an app-rationalization map of 20+ tools and an interactive integration landscape app",
+          "Owned the Master SE Canvas for the account and solutions teams",
+          "Validated the Qualified use case and supported the CFO renewal proposal",
+          "Co-led sales process discovery to scope the Agentforce for Sales pilot",
+          "Brought in resources as needed: Riley Rhodes for executive alignment, Matt Czarny and Paritosh Shukla for architecture, Paul Eaklor for AI and automation; ran the weekly Solutions Sync",
+        ],
+        testimonial: {
+          quote: "Palakk has been running an incredibly strategic engagement at Storable, aligning with the CRO to build out an end to end Salesforce transformation.",
+          author: "Riley Rhodes, SE Director (September 2026)",
+        },
+        outcome: "Signed October 30 alongside Fin ($162K); Agentforce for Sales, Data 360 and Experience Cloud moved later in the fiscal year at the CFO's request. Matt Czarny: \"thanks for coordinating and organizing everything!\"",
+      },
+      {
         customer: "NinjaOne",
         subtitle: "Agentic Enterprise AI Day — Austin, June 2026",
         type: "Strategic Engagement",
+        images: [
+          { src: "/Promotion-case-App/images/shoutouts/NinjaOne-AI-Day.jpg", caption: "Seth Elliott — Big AI Day shoutout: Palakk \"vital architecting the AI Day playbook\"" },
+        ],
         impacts: [
           "Kicked off the agentic conversation at an account that had been slow to adopt AI",
           "13 attendees from NinjaOne's RevOps and Data & AI teams engaged for a 4+ hour AI Day",
@@ -155,10 +187,13 @@ const promotionData = {
         customer: "Trintech",
         subtitle: "Momentum + Agentforce for Sales Pilot — June–August 2026",
         type: "AI Pilot + Activation",
+        images: [
+          { src: "/Promotion-case-App/images/shoutouts/Trintech-builder.jpg", caption: "Matt Ericksen — Builder story: Palakk and Riley's builder request led to the first Prospecting Agent-in-a-day deployment" },
+        ],
         impacts: [
           "Signed a 10-user Momentum + Agentforce for Sales pilot",
           "Expansion path to 70 users (+$100.8K ACV) built on proving value in the pilot",
-          "Supported Prospecting Agent activation in Trintech's production org",
+          "Supported Prospecting Agent activation: the first \"Prospecting Agent-in-a-day\" rapid deployment created 151 prospects in production for 7 pilot reps",
           "CCO called the engagement a \"defining moment\" in Trintech's relationship with Salesforce",
         ],
         story: `Trintech's leadership wanted Salesforce to lead on AI, but with outcomes — territory intelligence, automated prospecting, conversation intelligence and rep coaching — not AI for AI's sake. Palakk owned the Agentforce for Sales demo in the executive session, positioned Momentum and Agentforce as complementary rather than overlapping, and stayed aligned to the deal from day one through activation.`,
