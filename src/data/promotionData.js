@@ -431,20 +431,6 @@ const promotionData = {
   recommendations: {
     salesTeam: [
       {
-        quote: "Palakk did an incredible job driving the deep discovery we needed with multiple lines of business in order to make this a successful event! She was vital architecting the AI Day playbook here and nailing her presentation to the customer!",
-        author: "Seth Elliott",
-        role: "Account Executive",
-        context: "NinjaOne AI Day — June 2026",
-      },
-      {
-        quote: "Anthony Dotson, Matt Czarny, Palakk Shrivastava and Logan Sackley played a huge role in helping go under the hood and show them the technical depth of Agentforce and how it could be a solution not just in the limited service use case but across the org.",
-        author: "Nick Pauze",
-        role: "Account Executive",
-        context: "NEOGOV Agentforce for Service + Contact Center win — October 2026",
-        image: "/Promotion-case-App/images/shoutouts/Neogov-win.jpg",
-        quoteInImage: true,
-      },
-      {
         quote: "What stood out most about Palakk was the combination of her positivity, curiosity, and willingness to dive into any level of detail needed to move a customer conversation forward. She consistently asked the right questions, challenged us to go a layer deeper, and had a great ability to uncover what was really driving a customer's needs rather than simply addressing what was on the surface... She played a meaningful role in helping us navigate and ultimately close several key deals this fiscal year.",
         author: "Chet Kaiser",
         role: "Account Executive",
@@ -453,10 +439,24 @@ const promotionData = {
         quoteInImage: true,
       },
       {
+        quote: "Palakk did an incredible job driving the deep discovery we needed with multiple lines of business in order to make this a successful event! She was vital architecting the AI Day playbook here and nailing her presentation to the customer!",
+        author: "Seth Elliott",
+        role: "Account Executive",
+        context: "NinjaOne AI Day — June 2026",
+      },
+      {
         quote: "Palakk just rolled with it, leveraged resources to get help when needed and worked overtime to pull it off... They specifically called out how specific to them our whole session was.",
         author: "Nick Pauze",
         role: "Account Executive",
         context: "LightEdge Agentforce & Data360 workshop — April 2026",
+      },
+      {
+        quote: "Anthony Dotson, Matt Czarny, Palakk Shrivastava and Logan Sackley played a huge role in helping go under the hood and show them the technical depth of Agentforce and how it could be a solution not just in the limited service use case but across the org.",
+        author: "Nick Pauze",
+        role: "Account Executive",
+        context: "NEOGOV Agentforce for Service + Contact Center win — October 2026",
+        image: "/Promotion-case-App/images/shoutouts/Neogov-win.jpg",
+        quoteInImage: true,
       },
       {
         quote: "Big thank you to Palakk for her support, could not have done without you!",
@@ -469,12 +469,6 @@ const promotionData = {
         quote: "In the short time you've been on our team this year, you've made an impact that most people take years to build. You hit the ground running, ramped up fast, and quickly became someone the team leans on and trusts... Your energy, curiosity, and drive to figure things out have raised the bar for everyone around you.",
         author: "Riley Rhodes",
         role: "SE Director",
-        context: "4-year Salesforce anniversary — August 2026",
-      },
-      {
-        quote: "You've made a quick impact on TMT and look forward to seeing what's in store next!",
-        author: "Chris Decker",
-        role: "Principal Account SE",
         context: "4-year Salesforce anniversary — August 2026",
       },
       {
@@ -491,10 +485,10 @@ const promotionData = {
         image: "/Promotion-case-App/images/shoutouts/Bill-Nickolson-Neogov.jpg",
       },
       {
-        quote: "Palakk has been running an incredibly strategic engagement at Storable, aligning with the CRO to build out an end to end Salesforce transformation.",
-        author: "Riley Rhodes",
-        role: "SE Director",
-        context: "Storable — September 2026",
+        quote: "Her demo went surprisingly well for her Clari compete after their first initial underwhelming demo too. Might be worth syncing with her on what seemed to make it go so well.",
+        author: "Matt Czarny",
+        role: "Principal Strategic SE",
+        context: "Recommending Palakk's competitive demo approach to the team — August 2026",
       },
       {
         quote: "Huge shoutout to Palakk and Ali for leading the way and recording the enablement for setting up Prospecting Agent.",
@@ -503,16 +497,22 @@ const promotionData = {
         context: "Prospecting Agent setup enablement — August 2026",
       },
       {
+        quote: "Palakk has been running an incredibly strategic engagement at Storable, aligning with the CRO to build out an end to end Salesforce transformation.",
+        author: "Riley Rhodes",
+        role: "SE Director",
+        context: "Storable — September 2026",
+      },
+      {
+        quote: "You've made a quick impact on TMT and look forward to seeing what's in store next!",
+        author: "Chris Decker",
+        role: "Principal Account SE",
+        context: "4-year Salesforce anniversary — August 2026",
+      },
+      {
         quote: "Riley is lucky to have you. It shows how much you are invested.",
         author: "Paul Eaklor",
         role: "Distinguished Enterprise Architect",
         context: "LightEdge workshop",
-      },
-      {
-        quote: "Her demo went surprisingly well for her Clari compete after their first initial underwhelming demo too. Might be worth syncing with her on what seemed to make it go so well.",
-        author: "Matt Czarny",
-        role: "Principal Strategic SE",
-        context: "Recommending Palakk's competitive demo approach to the team — August 2026",
       },
       {
         quote: "HUGE SHOUTOUT to Palakk for absolutely crushing it.",
