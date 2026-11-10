@@ -9,6 +9,7 @@ import ACVTracker from "./components/ACVTracker";
 import DealExcellence from "./components/DealExcellence";
 import LeadershipPrograms from "./components/LeadershipPrograms";
 import Mentorship from "./components/Mentorship";
+import Recommendations from "./components/Recommendations";
 import LookingAhead from "./components/LookingAhead";
 import promotionData from "./data/promotionData";
 import "./App.css";
@@ -32,6 +33,7 @@ function App() {
         <DealExcellence dealData={promotionData.dealExcellence} />
         <LeadershipPrograms leadershipData={promotionData.leadershipPrograms} />
         <Mentorship items={promotionData.mentorship} />
+        <Recommendations data={promotionData.recommendations} />
         <LookingAhead />
         <footer className="app-footer">
           <p>Palakk Shrivastava — Lead SE Promotion Case — Confidential — October 2026</p>

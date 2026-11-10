@@ -27,6 +27,7 @@ const sections = [
   { id: "deals", label: "Deal Excellence", icon: Briefcase },
   { id: "leadership", label: "Leadership & Programs", icon: Award },
   { id: "mentorship", label: "Mentorship", icon: Heart },
+  { id: "recommendations", label: "Recommendations", icon: MessageSquareQuote },
   { id: "looking-ahead", label: "Looking Ahead", icon: Rocket },
 ];
 

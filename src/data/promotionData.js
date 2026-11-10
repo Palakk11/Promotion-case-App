@@ -425,6 +425,71 @@ const promotionData = {
     ],
   },
 
+  // Recommendations — shoutouts from sales teams and peers.
+  // To add one: copy a block into salesTeam or peers. role, context and image are optional.
+  recommendations: {
+    salesTeam: [
+      {
+        quote: "Palakk did an incredible job driving the deep discovery we needed with multiple lines of business in order to make this a successful event! She was vital architecting the AI Day playbook here and nailing her presentation to the customer!",
+        author: "Seth Elliott",
+        role: "Account Executive",
+        context: "NinjaOne AI Day — June 2026",
+        image: "/Promotion-case-App/images/shoutouts/NinjaOne-AI-Day.jpg",
+      },
+      {
+        quote: "She consistently asked the right questions, challenged us to go a layer deeper, and had a great ability to uncover what was really driving a customer's needs rather than simply addressing what was on the surface... She played a meaningful role in helping us navigate and ultimately close several key deals this fiscal year.",
+        author: "Chet Kaiser",
+        role: "Account Executive",
+        context: "Trintech and FY27 deals",
+      },
+      {
+        quote: "Palakk just rolled with it, leveraged resources to get help when needed and worked overtime to pull it off... They specifically called out how specific to them our whole session was.",
+        author: "Nick Pauze",
+        role: "Account Executive",
+        context: "LightEdge Agentforce & Data360 workshop — April 2026",
+        image: "/Promotion-case-App/images/shoutouts/Lightedge3.png",
+      },
+      {
+        quote: "Big thank you to Palakk for her support, could not have done without you!",
+        author: "Eddie Prasch",
+        context: "$32K Agentforce + Revenue Cloud upgrade win",
+        image: "/Promotion-case-App/images/shoutouts/Eddie-Prasch-Deal-shoutout.jpg",
+      },
+    ],
+    peers: [
+      {
+        quote: "Palakk has been running an incredibly strategic engagement at Storable, aligning with the CRO to build out an end to end Salesforce transformation.",
+        author: "Riley Rhodes",
+        role: "SE Director",
+        context: "Storable — September 2026",
+        image: "/Promotion-case-App/images/shoutouts/Storable-Riley.jpg",
+      },
+      {
+        quote: "Huge shoutout to Palakk and Ali for leading the way and recording the enablement for setting up Prospecting Agent.",
+        author: "Brent Healy",
+        context: "Prospecting Agent setup enablement — August 2026",
+        image: "/Promotion-case-App/images/shoutouts/Brent-prospecting-agent.jpg",
+      },
+      {
+        quote: "Riley is lucky to have you. It shows how much you are invested.",
+        author: "Paul Eaklor",
+        context: "LightEdge workshop",
+        image: "/Promotion-case-App/images/shoutouts/Lightedge5.png",
+      },
+      {
+        quote: "Thanks for coordinating and organizing everything!",
+        author: "Matt Czarny",
+        context: "Storable renewal — October 2026",
+      },
+      {
+        quote: "HUGE SHOUTOUT to Palakk for absolutely crushing it.",
+        author: "Jeet Shah",
+        context: "Presenting Service Cloud + Data Cloud at MissionForce Enablement",
+        image: "/Promotion-case-App/images/shoutouts/Missionforce Peer shoutout .jpg",
+      },
+    ],
+  },
+
   mentorship: [
     {
       title: "Trailguide — Sarah Fung",

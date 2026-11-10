@@ -2189,3 +2189,91 @@
     display: none;
   }
 }
+
+/* ========== RECOMMENDATIONS ========== */
+.recommendation-group + .recommendation-group {
+  margin-top: 36px;
+}
+
+.recommendation-group-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: var(--accent-light);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 16px;
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.recommendation-card {
+  margin: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color 0.3s;
+  break-inside: avoid;
+}
+
+.recommendation-card:hover {
+  border-color: var(--accent);
+}
+
+.recommendation-quote-icon {
+  color: var(--gold-light);
+}
+
+.recommendation-card blockquote {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+  font-style: italic;
+  flex: 1;
+}
+
+.recommendation-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.recommendation-author {
+  font-weight: 700;
+  color: var(--text-heading);
+  font-size: 14px;
+}
+
+.recommendation-role {
+  font-size: 12.5px;
+  color: var(--accent-light);
+}
+
+.recommendation-context {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.recommendation-image {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.recommendation-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+}
