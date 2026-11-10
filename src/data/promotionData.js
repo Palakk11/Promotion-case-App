@@ -156,6 +156,7 @@ const promotionData = {
         type: ["Strategic Engagement", "AI Day", "Transformation"],
         images: [
           { src: "/Promotion-case-App/images/shoutouts/NinjaOne-AI-Day.jpg", caption: "Seth Elliott — Big AI Day shoutout: Palakk \"vital architecting the AI Day playbook\"" },
+          { src: "/Promotion-case-App/images/shoutouts/NinjaOne-AI-Day-presenting.jpg", caption: "Presenting the NinjaOne demo at the AI Day in Austin" },
         ],
         impacts: [
           "Kicked off the agentic conversation at an account that had been slow to adopt AI",
