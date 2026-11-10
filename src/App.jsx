@@ -21,6 +21,7 @@ function App() {
       <Sidebar />
       <main className="main-content">
         <Hero data={promotionData} />
+        <Timeline careerJourney={promotionData.careerJourney} />
         <Preamble />
         <CompetencyRadar />
         <MetricsDashboard
@@ -34,7 +35,6 @@ function App() {
         <LeadershipPrograms leadershipData={promotionData.leadershipPrograms} />
         <Collaborative collabData={promotionData.collaborative} />
         <Mentorship items={promotionData.mentorship} />
-        <Timeline careerJourney={promotionData.careerJourney} />
         <LookingAhead />
         <footer className="app-footer">
           <p>Palakk Shrivastava — Lead SE Promotion Case — Confidential — October 2026</p>

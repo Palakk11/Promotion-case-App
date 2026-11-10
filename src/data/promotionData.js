@@ -24,8 +24,8 @@ const promotionData = {
   careerJourney: [
     {
       role: "Senior Account SE, TMT CMRCL",
-      period: "Feb 2025 – Present",
-      duration: "1 Year 8 Months",
+      period: "Feb 2026 – Present",
+      duration: "9 Months",
       milestones: [
         "SE of the Quarter — FY27 Q2, Riley Rhodes' team",
         "Prospecting Agent setup enablement — co-built and recorded in 3 business days for TMT's first Golden Use Case",
@@ -38,13 +38,20 @@ const promotionData = {
       ],
     },
     {
-      role: "Solution Engineer, SMB",
-      period: "Aug 2022 – Jan 2025",
-      duration: "2 Years 6 Months",
+      role: "Senior Account SE, SMB",
+      period: "Feb 2025 – Jan 2026",
+      duration: "1 Year",
       milestones: [
         "Solutions MVP — Oct FY26",
         "World Tour NYC SMB keynote demo driver — 200+ live, 270 VOD views",
         "Data360 Tiger Team — led Sales & Solutions pillar, enabled 250+ AEs",
+      ],
+    },
+    {
+      role: "Solution Engineer, SMB",
+      period: "Aug 2022 – Jan 2025",
+      duration: "2 Years 6 Months",
+      milestones: [
         "First Agentforce for Service deal in SMB",
         "First Einstein 1 Field Service deal company-wide",
         "First Marketing Cloud Growth deal company-wide",
@@ -424,10 +431,6 @@ const promotionData = {
     {
       title: "Revenue Cloud Blackbelt — Deal Contributions",
       description: "As a certified Revenue Cloud Blackbelt, contributed actively to deal cycles outside her own book of business. Impact: $55K+ ACV in SMB contributed deals in FY26.",
-    },
-    {
-      title: '"Careers at Salesforce" Panelist — UT Dallas (FY24)',
-      description: "Represented Salesforce externally as guest panelist, communicating the SE career path and culture to 50+ students, faculty, and professionals. Participated through Trailhead Academy VTO.",
     },
     {
       image: { src: "/Promotion-case-App/images/shoutouts/Mentorship-shoutout.jpg" },

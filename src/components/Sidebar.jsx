@@ -22,6 +22,7 @@ import {
 
 const sections = [
   { id: "hero", label: "Overview", icon: User },
+  { id: "timeline", label: "Journey", icon: Clock },
   { id: "preamble", label: "Business Case", icon: FileText },
   { id: "competencies", label: "Core Competencies", icon: BookOpen },
   { id: "metrics", label: "Impact Creator", icon: BarChart3 },
@@ -30,7 +31,6 @@ const sections = [
   { id: "leadership", label: "Leadership & Programs", icon: Award },
   { id: "collaborative", label: "Action Oriented", icon: Handshake },
   { id: "mentorship", label: "Mentorship", icon: Heart },
-  { id: "timeline", label: "Journey", icon: Clock },
   { id: "looking-ahead", label: "Looking Ahead", icon: Rocket },
 ];
 
