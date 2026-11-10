@@ -54,8 +54,13 @@ const promotionData = {
     },
   ],
 
+  acvByYear: [
+    { year: "FY2027", total: "$1.28M", subtitle: "Q1–Q3 to date", quarters: [] },
+    { year: "FY2026", total: "$1.4M", quarters: [] },
+  ],
+
   highlights: [
-    { label: "Total ACV", value: "$7.19M", subtitle: "through FY27 Q3" },
+    { label: "ACV", value: "$2.1M", subtitle: "FY27 through Q3" },
     { label: "Award", value: "SE of the\nQuarter", subtitle: "FY27 Q2" },
     { label: "Award", value: "Solutions\nMVP", subtitle: "Oct FY26" },
     { label: "AEs Enabled", value: "250+", subtitle: "AEs | 15+ sessions FY26" },
@@ -90,6 +95,11 @@ const promotionData = {
       title: "Revenue Cloud Blackbelt (FY26)",
       badge: "RC",
       description: "Directly contributed to $55K+ ACV in SMB contributed deals as a specialist resource outside own book of business. Revenue Cloud expertise used in active deal cycles to provide expert POV and demo support.",
+    },
+    {
+      title: "BVS Peer Certified — First Cohort",
+      badge: "BVS",
+      description: "Completed in the inaugural cohort. Leads with BVS methodology embedded in discovery and executive briefings, including the LightEdge workshop pre-alignment series.",
     },
   ],
 
@@ -367,7 +377,7 @@ const promotionData = {
     items: [
       {
         title: "Mastering the Agentic Contact Center — Customer Workshop",
-        subtitle: "Austin — May 2026",
+        subtitle: "Austin — May 2026 (FY27)",
         impacts: [
           "Part of a 10-city, VP-sponsored AMER roadshow — one of the highest-visibility customer programs in FY27",
           "40+ customers supported with live multi-cloud technical Q&A (Agentforce, Service Cloud, Data Cloud)",

@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Preamble from "./components/Preamble";
 import MetricsDashboard from "./components/MetricsDashboard";
 import CompetencyRadar from "./components/CompetencyRadar";
+import ACVTracker from "./components/ACVTracker";
 import DealExcellence from "./components/DealExcellence";
 import LeadershipPrograms from "./components/LeadershipPrograms";
 import Collaborative from "./components/Collaborative";
@@ -28,6 +29,7 @@ function App() {
           products={promotionData.products}
           certifications={promotionData.certifications}
         />
+        <ACVTracker acvByYear={promotionData.acvByYear} />
         <DealExcellence dealData={promotionData.dealExcellence} />
         <LeadershipPrograms leadershipData={promotionData.leadershipPrograms} />
         <Collaborative collabData={promotionData.collaborative} />
