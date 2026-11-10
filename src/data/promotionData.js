@@ -11,7 +11,7 @@ const promotionData = {
     slackUrl: "https://salesforce.enterprise.slack.com/team/U03A3NRRUBY",
   },
 
-  executiveSummary: `Palakk Shrivastava has spent 4 years at Salesforce turning ambiguity into certainty — consistently showing up as a multiplier for the people and teams around her. Her approach is grounded in core values she truly believes in and lives every day.`,
+  executiveSummary: `In 1 year and 10 months as a Senior SE, Palakk Shrivastava has turned ambiguity into certainty — consistently showing up as a multiplier for the people and teams around her. Her approach is grounded in core values she truly believes in and lives every day.`,
 
   roleDescription: `I am a Senior Account SE for TMT CMRCL AMER at Salesforce. I partner closely with my AEs, solutions leadership, and extended SE ecosystem to ensure we deliver great customer engagements and drive meaningful revenue. My priority is consistent, adaptable performance — showing up every quarter with strong ACV, deep product knowledge, and a genuine desire to elevate everyone around me.`,
 
@@ -52,9 +52,6 @@ const promotionData = {
       period: "Aug 2022 – Jan 2025",
       duration: "2 Years 6 Months",
       milestones: [
-        "First Agentforce for Service deal in SMB",
-        "First Einstein 1 Field Service deal company-wide",
-        "First Marketing Cloud Growth deal company-wide",
         "BVS Peer Certified — first cohort",
         "$4.5M ACV closed across FY23–FY25",
       ],
@@ -62,7 +59,7 @@ const promotionData = {
   ],
 
   acvByYear: [
-    { year: "FY2027", total: "$1.28M", subtitle: "Q1–Q3 to date", quarters: [] },
+    { year: "FY2027", total: "$2.1M", subtitle: "Q1–Q3 to date", quarters: [] },
     { year: "FY2026", total: "$1.4M", quarters: [] },
   ],
 
@@ -451,9 +448,8 @@ const promotionData = {
   ],
 
   firstOfKindWins: [
-    "First Agentforce for Service deal in SMB",
-    "First Einstein 1 Field Service deal company-wide",
-    "First Marketing Cloud Growth deal company-wide",
+    "First Momentum win at LightEdge",
+    "TMT's first Golden Use Case — Prospecting Agent setup",
   ],
 };
 

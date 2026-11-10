@@ -107,12 +107,10 @@ export default function Preamble() {
           mentoring others — position her exceptionally well for the Lead SE role.
         </p>
         <div className="first-of-kind">
-          <h4><Sparkles size={16} /> First-of-Their-Kind Wins</h4>
+          <h4><Sparkles size={16} /> First-of-Their-Kind Wins (FY26–FY27)</h4>
           <div className="firsts-list">
-            <span className="first-badge">First Agentforce for Service deal in SMB</span>
-            <span className="first-badge">First Einstein 1 Field Service deal company-wide</span>
-            <span className="first-badge">First Marketing Cloud Growth deal company-wide</span>
             <span className="first-badge">First Momentum win at LightEdge</span>
+            <span className="first-badge">TMT's first Golden Use Case — Prospecting Agent setup</span>
           </div>
         </div>
       </motion.div>

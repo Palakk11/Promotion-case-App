@@ -1,84 +1,78 @@
 import { useEffect, useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
 
+// The 9 competencies that step up from Senior to Lead in the official Global SE
+// Competency Framework (By Job Grade > Lead Core/Industry SE). Senior is one level below.
 const competencyGaps = [
   {
     competency: "Objection Handling",
     seniorLevel: "Intermediate",
     leadLevel: "Advanced",
     evidence:
-      "LightEdge: handled live C-level pushback, pivoted narrative — customer asked \"Why didn't ServiceNow do this for us?\" PerfectVision: navigated $631K attrition objection by reframing renewal as expansion.",
+      "LightEdge: handled live C-level pushback and pivoted the narrative; customer asked \"Why didn't ServiceNow do this for us?\" PerfectVision: navigated a $631K attrition objection by reframing the renewal as expansion. Storable: renewed early while Intercom Fin pitched to replace 261 Service Cloud seats.",
   },
   {
-    competency: "Facilitation",
+    competency: "Solution Orientation",
     seniorLevel: "Intermediate",
     leadLevel: "Advanced",
     evidence:
-      "World Tour NYC keynote to 200+ live audience. Agentic Contact Center roadshow — facilitated 40+ customers with live technical Q&A. Palakk's Potluck — recruited 10 SE co-presenters across releases.",
+      "Prospecting Agent setup: co-built and recorded in 3 business days, becoming TMT's first Golden Use Case and reused in Edmentum, LightEdge and Trintech. Self-nominated to fill the cross-cloud gap at the Agentic Contact Center workshop.",
   },
   {
     competency: "Differentiation",
     seniorLevel: "Standard",
-    leadLevel: "Advanced",
+    leadLevel: "Intermediate",
     evidence:
-      "LightEdge sent Salesforce's workshop format to ServiceNow to replicate. Created Missionforce content positioning Agentforce against competitive alternatives for 100+ SEs.",
+      "LightEdge sent Salesforce's workshop format to ServiceNow to replicate. First Momentum win at LightEdge. Created Missionforce content positioning Agentforce against competitive alternatives for 100+ SEs.",
   },
   {
     competency: "Industry Foundations",
     seniorLevel: "Standard",
-    leadLevel: "Advanced",
+    leadLevel: "Intermediate",
     evidence:
-      "Deep TMT expertise — telecom (PerfectVision/AT&T contract loss), datacenter (LightEdge multi-vendor architecture), media. Built D360 Gem as org-wide industry asset for SMB AEs.",
+      "TMT depth across telecom (PerfectVision post-AT&T), datacenter (LightEdge multi-vendor architecture) and software (NinjaOne, Trintech, Storable). Built the D360 Gem as an industry asset for AEs.",
   },
   {
     competency: "Business Foundations",
     seniorLevel: "Standard",
     leadLevel: "Intermediate",
     evidence:
-      "PerfectVision: identified dealer marketing gap by analyzing post-AT&T business model shift. C3 Ventures: drove single-product renewal to multi-cloud expansion ($74K ACV).",
+      "PerfectVision: identified the dealer marketing gap from the post-AT&T business model shift. C3 Ventures: grew a single-product renewal into multi-cloud expansion ($74K ACV).",
   },
   {
-    competency: "Product Capabilities & Architecture",
+    competency: "Product Capabilities & Technical Architecture",
     seniorLevel: "Standard",
-    leadLevel: "Advanced",
+    leadLevel: "Intermediate",
     evidence:
-      "Citizen Architect certified. First-of-kind wins across 3 products (Agentforce, Field Service, MCG). Revenue Cloud Blackbelt — $55K ACV contributed outside own book.",
+      "Citizen Architect and Revenue Cloud Blackbelt (FY26), with $55K+ ACV contributed outside own book. AI-native demo engineering with Claude and Cursor. Multi-cloud architecture across Data360, Agentforce and Service Cloud.",
   },
   {
     competency: "Consultative Selling",
     seniorLevel: "Standard",
-    leadLevel: "Advanced",
+    leadLevel: "Intermediate",
     evidence:
-      "LightEdge: coordinated Architects, BVS, specialists, and executive sponsors end-to-end. NetSpark: orchestrated complex handover with rapid Spiff solution fit ($49K ACV).",
+      "Storable: brought in the right resource at each stage, from Riley Rhodes for executive alignment to strategic SEs and architects ($195.8K ACV). LightEdge: coordinated architects, BVS, specialists and executive sponsors end to end.",
   },
   {
-    competency: "Project Monitoring",
-    seniorLevel: "Intermediate",
-    leadLevel: "Advanced",
-    evidence:
-      "Tiger Team: managed deliverables across 5 SEs and 8+ sessions over 9 months. LightEdge: orchestrated pre-workshop alignment series under compressed timeline in first week on account.",
-  },
-  {
-    competency: "Customer Feedback",
+    competency: "Leveraging Customer Feedback",
     seniorLevel: "Standard",
-    leadLevel: "Advanced",
+    leadLevel: "Intermediate",
     evidence:
-      "PerfectVision: proposed CDP/Data Cloud play before customer identified the need. LightEdge: led post-workshop readback to maintain momentum. BVS methodology embedded in ongoing discovery.",
+      "PerfectVision: proposed the CDP/Data Cloud play before the customer named the need. LightEdge: led the post-workshop readback to keep momentum. NinjaOne AI Day: shaped the session from discovery across lines of business.",
   },
   {
     competency: "Value Realization",
     seniorLevel: "Standard",
     leadLevel: "Intermediate",
     evidence:
-      "LightEdge: walked through implementation structure across architecture, BVS, and use case sessions. PerfectVision: proactively planned June 2026 customer on-site for post-renewal expansion.",
+      "LightEdge: walked through implementation structure across architecture, BVS and use-case sessions. PerfectVision: planned a post-renewal customer on-site for expansion.",
   },
 ];
 
 const competencies = [
   { label: "Technical Depth", score: 95, description: "Multi-cloud expertise across 9+ products, AI-native demo engineering with Claude + Cursor" },
   { label: "Customer Engagement", score: 92, description: "Deep discovery-driven approach — LightEdge workshop became customer benchmark vs. ServiceNow" },
-  { label: "Deal Strategy", score: 93, description: "$7.19M ACV, PerfectVision $631K attrition save, NNAOV navigation" },
+  { label: "Deal Strategy", score: 93, description: "$2.1M ACV in FY27 through Q3, PerfectVision $631K attrition save, NNAOV navigation" },
   { label: "Enablement & Scale", score: 95, description: "250+ AEs enabled via Tiger Team, Palakk's Potluck, D360 Gem deployed org-wide" },
   { label: "Cross-Cloud Expertise", score: 90, description: "Data360, Agentforce, Revenue Cloud, Marketing Cloud, Field Service, Slack, MuleSoft" },
   { label: "Mentorship", score: 87, description: "Trailguide, Peer Cert panelist, Revenue Cloud deal support outside book of business" },
@@ -87,8 +81,6 @@ const competencies = [
 ];
 
 function CompetencyTable() {
-  const [expandedRow, setExpandedRow] = useState(null);
-
   return (
     <div className="competency-table-wrapper" style={{ marginTop: 40 }}>
       <table className="competency-table">
@@ -96,58 +88,34 @@ function CompetencyTable() {
           <tr>
             <th>Competency</th>
             <th>Senior</th>
-            <th>Lead</th>
-            <th></th>
+            <th>Lead Target</th>
+            <th>Justifying Examples</th>
           </tr>
         </thead>
         <tbody>
           {competencyGaps.map((row, i) => (
             <motion.tr
-              key={i}
-              className={`comp-row ${expandedRow === i ? "expanded" : ""}`}
+              key={row.competency}
+              className="comp-row"
               initial={{ opacity: 0, x: -10 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.06, duration: 0.4 }}
-              onClick={() => setExpandedRow(expandedRow === i ? null : i)}
-              style={{ cursor: "pointer" }}
             >
               <td className="comp-name">{row.competency}</td>
               <td>
-                <span className="level-badge level-senior">
-                  {row.seniorLevel}
-                </span>
+                <span className="level-badge level-senior">{row.seniorLevel}</span>
               </td>
               <td>
                 <span className={`level-badge ${row.leadLevel === "Advanced" ? "level-lead-advanced" : "level-lead"}`}>
                   {row.leadLevel}
                 </span>
               </td>
-              <td className="comp-expand-cell">
-                <ChevronDown size={16} className={`comp-chevron ${expandedRow === i ? "rotated" : ""}`} />
-              </td>
+              <td className="comp-evidence">{row.evidence}</td>
             </motion.tr>
           ))}
         </tbody>
       </table>
-
-      <AnimatePresence>
-        {expandedRow !== null && (
-          <motion.div
-            key={expandedRow}
-            className="comp-evidence-panel"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25 }}
-          >
-            <div className="comp-evidence-content">
-              <strong>{competencyGaps[expandedRow].competency}</strong>
-              <p>{competencyGaps[expandedRow].evidence}</p>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
