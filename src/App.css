@@ -266,12 +266,28 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 .exec-summary-images .program-image {
   max-width: none;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+}
+
+.exec-summary-images .program-image img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--bg-surface);
+}
+
+.exec-summary-images .program-image-caption {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {

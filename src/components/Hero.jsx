@@ -42,16 +42,6 @@ export default function Hero({ data }) {
             ))}
           </div>
           <p>{executiveSummary}</p>
-          <div className="exec-summary-images">
-            <figure className="program-image">
-              <img src={`${import.meta.env.BASE_URL}images/shoutouts/Top-field-reps-AHC-FY27.jpg`} alt="Top Field Representatives globally" />
-              <figcaption className="program-image-caption">Named among the FY27 top Field Representatives globally — Adam Alfano's all-hands</figcaption>
-            </figure>
-            <figure className="program-image">
-              <img src={`${import.meta.env.BASE_URL}images/shoutouts/SE-of-the-quarter.png`} alt="SE of the Quarter" />
-              <figcaption className="program-image-caption">SE of the Quarter — FY27 Q2</figcaption>
-            </figure>
-          </div>
         </div>
 
         <ul className="values-detail-list">
@@ -60,6 +50,17 @@ export default function Hero({ data }) {
           <li><strong>Curiosity</strong> — the best SE is a perpetual learner; she ramps first, then enables others.</li>
           <li><strong>Collaboration</strong> — multiplying impact beyond her own deals, fostering shared success that outlasts any single quarter.</li>
         </ul>
+
+        <div className="exec-summary-images">
+          <figure className="program-image">
+            <img src={`${import.meta.env.BASE_URL}images/shoutouts/Top-field-reps-AHC-FY27.jpg`} alt="Top Field Representatives globally" />
+            <figcaption className="program-image-caption">Named among the FY27 top Field Representatives globally — Adam Alfano's all-hands</figcaption>
+          </figure>
+          <figure className="program-image">
+            <img src={`${import.meta.env.BASE_URL}images/shoutouts/SE-of-the-quarter.png`} alt="SE of the Quarter" />
+            <figcaption className="program-image-caption">SE of the Quarter — FY27 Q2</figcaption>
+          </figure>
+        </div>
 
       </motion.div>
 
