@@ -1391,27 +1391,30 @@
 /* ========== TIMELINE ========== */
 .career-timeline {
   position: relative;
-  padding-left: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding-top: 28px;
 }
 
 .career-line {
   position: absolute;
-  left: 11px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(180deg, var(--accent), var(--purple));
+  top: 34px;
+  left: 7px;
+  right: 7px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--purple));
 }
 
 .career-step {
   position: relative;
-  padding: 16px 0 32px 24px;
+  padding-top: 28px;
 }
 
 .career-dot {
   position: absolute;
-  left: -25px;
-  top: 20px;
+  left: 0;
+  top: -1px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -1420,9 +1423,26 @@
   z-index: 1;
 }
 
+.career-step.current .career-dot {
+  background: var(--purple);
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.25);
+}
+
+.career-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  height: 100%;
+}
+
+.career-step.current .career-content {
+  border-color: rgba(139, 92, 246, 0.5);
+}
+
 .career-content h3 {
-  font-size: 18px;
-  margin-bottom: 4px;
+  font-size: 17px;
+  margin-bottom: 6px;
 }
 
 .career-period {
@@ -1435,6 +1455,15 @@
 .career-duration {
   font-size: 13px;
   color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .career-timeline {
+    grid-template-columns: 1fr;
+  }
+  .career-line {
+    display: none;
+  }
 }
 
 /* ========== LOOKING AHEAD ========== */

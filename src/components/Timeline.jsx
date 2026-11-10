@@ -9,12 +9,12 @@ export default function Timeline({ careerJourney }) {
       </div>
 
       <div className="career-timeline">
-        {careerJourney.map((step, i) => (
+        {[...careerJourney].reverse().map((step, i) => (
           <motion.div
             key={i}
-            className="career-step"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className={`career-step ${i === careerJourney.length - 1 ? "current" : ""}`}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.2, duration: 0.5 }}
           >
