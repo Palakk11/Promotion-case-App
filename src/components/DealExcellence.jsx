@@ -1,19 +1,20 @@
-import { useState } from "react";
+import useCardToggle from "./useCardToggle";
 import { motion, AnimatePresence } from "framer-motion";
 import { Quote, CheckCircle2, Zap, ChevronDown, ExternalLink } from "lucide-react";
 
 function DealCard({ deal, i }) {
-  const [expanded, setExpanded] = useState(false);
+  const { expanded, printing, onCardClick } = useCardToggle();
 
   return (
     <motion.div
-      className={`deal-card ${expanded ? "expanded" : ""}`}
+      className={`deal-card card-toggle ${expanded ? "expanded" : ""}`}
+      onClick={onCardClick}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: i * 0.15, duration: 0.5 }}
     >
-      <div className="deal-header clickable" onClick={() => setExpanded(!expanded)}>
+      <div className="deal-header">
         <div>
           <h3>{deal.customer}</h3>
           <span className="deal-subtitle">{deal.subtitle}</span>
@@ -38,7 +39,7 @@ function DealCard({ deal, i }) {
         {expanded && (
           <motion.div
             className="deal-expandable"
-            initial={{ height: 0, opacity: 0 }}
+            initial={printing ? false : { height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
@@ -100,7 +101,7 @@ function DealCard({ deal, i }) {
 
       {!expanded && (
         <div className="deal-peek-row">
-          <span className="deal-peek">Click to expand full details</span>
+          <span className="deal-peek">Click anywhere on the card to expand full details</span>
           {deal.link && (
             <a href={deal.link.url} target="_blank" rel="noopener noreferrer" className="program-link" onClick={(e) => e.stopPropagation()}>
               <ExternalLink size={14} />

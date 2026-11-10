@@ -1847,7 +1847,15 @@
   margin-top: 0;
 }
 
-.deal-card.expanded {
+.card-toggle {
+  cursor: pointer;
+}
+
+.card-toggle img {
+  cursor: zoom-in;
+}
+
+.deal-card.expanded, .program-card.expanded {
   border-color: var(--accent);
   box-shadow: 0 4px 24px rgba(59, 130, 246, 0.1);
 }
@@ -2171,6 +2179,13 @@
 
 @media print {
   .lightbox {
+    display: none;
+  }
+}
+
+@media print {
+  .deal-peek-row .deal-peek,
+  .expand-icon {
     display: none;
   }
 }
