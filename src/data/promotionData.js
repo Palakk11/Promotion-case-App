@@ -478,6 +478,13 @@ const promotionData = {
         context: "4-year Salesforce anniversary — August 2026",
       },
       {
+        quote: "I've had the pleasure of knowing Palakk for the better part of the last five years. She was a rockstar from the get go and has only honed her craft further and further. She was a huge influencer in the AI movement from day 1... and has leaned into the ever changing AI landscape day in and day out! Thank you for being you!!",
+        author: "Kevin Drake",
+        role: "Lead Account SE",
+        context: "Team Shout-Out — June 2026",
+        image: "/Promotion-case-App/images/shoutouts/Kevin-Drake-shoutout.jpg",
+      },
+      {
         quote: "Palakk has been running an incredibly strategic engagement at Storable, aligning with the CRO to build out an end to end Salesforce transformation.",
         author: "Riley Rhodes",
         role: "SE Director",
