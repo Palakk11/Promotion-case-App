@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Quote, CheckCircle2, Zap, ChevronDown, ExternalLink } from "lucide-react";
+import CompetencyTags from "./CompetencyTags";
 
 function DealCard({ deal, i }) {
   const [expanded, setExpanded] = useState(false);
@@ -23,6 +24,8 @@ function DealCard({ deal, i }) {
           <ChevronDown size={20} className={`expand-icon ${expanded ? "rotated" : ""}`} />
         </div>
       </div>
+
+      <CompetencyTags items={deal.competencies} />
 
       <div className="deal-impacts">
         <h4><Zap size={16} /> Impact</h4>

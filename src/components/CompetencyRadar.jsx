@@ -1,73 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-
-// The 9 competencies that step up from Senior to Lead in the official Global SE
-// Competency Framework (By Job Grade > Lead Core/Industry SE). Senior is one level below.
-const competencyGaps = [
-  {
-    competency: "Objection Handling",
-    seniorLevel: "Intermediate",
-    leadLevel: "Advanced",
-    evidence:
-      "LightEdge: handled live C-level pushback and pivoted the narrative; customer asked \"Why didn't ServiceNow do this for us?\" PerfectVision: navigated a $631K attrition objection by reframing the renewal as expansion. Storable: renewed early while Intercom Fin pitched to replace 261 Service Cloud seats.",
-  },
-  {
-    competency: "Solution Orientation",
-    seniorLevel: "Intermediate",
-    leadLevel: "Advanced",
-    evidence:
-      "Prospecting Agent setup: co-built and recorded in 3 business days, becoming TMT's first Golden Use Case and reused in Edmentum, LightEdge and Trintech. Self-nominated to fill the cross-cloud gap at the Agentic Contact Center workshop.",
-  },
-  {
-    competency: "Differentiation",
-    seniorLevel: "Standard",
-    leadLevel: "Intermediate",
-    evidence:
-      "LightEdge sent Salesforce's workshop format to ServiceNow to replicate. First Momentum win at LightEdge. Created Missionforce content positioning Agentforce against competitive alternatives for 100+ SEs.",
-  },
-  {
-    competency: "Industry Foundations",
-    seniorLevel: "Standard",
-    leadLevel: "Intermediate",
-    evidence:
-      "TMT depth across telecom (PerfectVision post-AT&T), datacenter (LightEdge multi-vendor architecture) and software (NinjaOne, Trintech, Storable). Built the D360 Gem as an industry asset for AEs.",
-  },
-  {
-    competency: "Business Foundations",
-    seniorLevel: "Standard",
-    leadLevel: "Intermediate",
-    evidence:
-      "PerfectVision: identified the dealer marketing gap from the post-AT&T business model shift. C3 Ventures: grew a single-product renewal into multi-cloud expansion ($74K ACV).",
-  },
-  {
-    competency: "Product Capabilities & Technical Architecture",
-    seniorLevel: "Standard",
-    leadLevel: "Intermediate",
-    evidence:
-      "Citizen Architect and Revenue Cloud Blackbelt (FY26), with $55K+ ACV contributed outside own book. AI-native demo engineering with Claude and Cursor. Multi-cloud architecture across Data360, Agentforce and Service Cloud.",
-  },
-  {
-    competency: "Consultative Selling",
-    seniorLevel: "Standard",
-    leadLevel: "Intermediate",
-    evidence:
-      "Storable: brought in the right resource at each stage, from Riley Rhodes for executive alignment to strategic SEs and architects ($195.8K ACV). LightEdge: coordinated architects, BVS, specialists and executive sponsors end to end.",
-  },
-  {
-    competency: "Leveraging Customer Feedback",
-    seniorLevel: "Standard",
-    leadLevel: "Intermediate",
-    evidence:
-      "PerfectVision: proposed the CDP/Data Cloud play before the customer named the need. LightEdge: led the post-workshop readback to keep momentum. NinjaOne AI Day: shaped the session from discovery across lines of business.",
-  },
-  {
-    competency: "Value Realization",
-    seniorLevel: "Standard",
-    leadLevel: "Intermediate",
-    evidence:
-      "LightEdge: walked through implementation structure across architecture, BVS and use-case sessions. PerfectVision: planned a post-renewal customer on-site for expansion.",
-  },
-];
+import { competencyAreas, seniorLevel } from "../data/competencyFramework";
 
 const competencies = [
   { label: "Technical Depth", score: 95, description: "Multi-cloud expertise across 9+ products, AI-native demo engineering with Claude + Cursor" },
@@ -92,29 +25,37 @@ function CompetencyTable() {
             <th>Justifying Examples</th>
           </tr>
         </thead>
-        <tbody>
-          {competencyGaps.map((row, i) => (
-            <motion.tr
-              key={row.competency}
-              className="comp-row"
-              initial={{ opacity: 0, x: -10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.06, duration: 0.4 }}
-            >
-              <td className="comp-name">{row.competency}</td>
-              <td>
-                <span className="level-badge level-senior">{row.seniorLevel}</span>
-              </td>
-              <td>
-                <span className={`level-badge ${row.leadLevel === "Advanced" ? "level-lead-advanced" : "level-lead"}`}>
-                  {row.leadLevel}
-                </span>
-              </td>
-              <td className="comp-evidence">{row.evidence}</td>
-            </motion.tr>
-          ))}
-        </tbody>
+        {competencyAreas.map((area) => (
+          <tbody key={area.area}>
+            <tr className="comp-area-row">
+              <td colSpan={4}>{area.area}</td>
+            </tr>
+            {area.competencies.map((row, i) => (
+              <motion.tr
+                key={row.name}
+                className="comp-row"
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05, duration: 0.4 }}
+              >
+                <td className="comp-name">
+                  {row.name}
+                  {row.up && <span className="comp-up">Up from Senior</span>}
+                </td>
+                <td>
+                  <span className="level-badge level-senior">{seniorLevel(row)}</span>
+                </td>
+                <td>
+                  <span className={`level-badge ${row.lead === "Advanced" ? "level-lead-advanced" : "level-lead"}`}>
+                    {row.lead}
+                  </span>
+                </td>
+                <td className="comp-evidence">{row.evidence}</td>
+              </motion.tr>
+            ))}
+          </tbody>
+        ))}
       </table>
     </div>
   );
@@ -231,7 +172,7 @@ export default function CompetencyRadar() {
     <section id="competencies" className="section" ref={containerRef}>
       <div className="section-header">
         <h2>Core Competencies & Scope of the Role</h2>
-        <p className="section-subtitle">The Global SE Competency Framework identifies 9 competencies that step up from Senior to Lead SE. Palakk is already performing at or above the Lead-level expectation in each.</p>
+        <p className="section-subtitle">The Global SE Competency Framework sets Lead SE targets for 20 competencies across 6 areas, 9 of which step up from Senior. Palakk is already performing at or above the Lead-level expectation in each, with FY26–FY27 examples below.</p>
       </div>
 
       <div className="competency-layout">

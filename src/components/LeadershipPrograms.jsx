@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, Zap, ExternalLink } from "lucide-react";
+import CompetencyTags from "./CompetencyTags";
 
 export default function LeadershipPrograms({ leadershipData }) {
   return (
@@ -27,6 +28,8 @@ export default function LeadershipPrograms({ leadershipData }) {
               </div>
               <span className="program-skill-badge">{prog.coreSkill}</span>
             </div>
+
+            <CompetencyTags items={prog.competencies} />
 
             <div className="program-impacts">
               <h4><Zap size={16} /> Impact</h4>

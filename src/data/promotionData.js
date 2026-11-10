@@ -121,6 +121,7 @@ const promotionData = {
     deals: [
       {
         customer: "Storable",
+        competencies: ["Orchestration", "Consultative Selling", "Objection Handling", "Contextual Communication", "Project Monitoring"],
         subtitle: "Transformation Engagement & Early Renewal — August to October 2026",
         type: "Strategic Account Transformation",
         images: [
@@ -149,6 +150,7 @@ const promotionData = {
       },
       {
         customer: "NinjaOne",
+        competencies: ["Solution Discovery", "Facilitation", "Orchestration", "Contextual Communication", "Solution Delivery"],
         subtitle: "Agentic Enterprise AI Day — Austin, June 2026",
         type: ["Strategic Engagement", "AI Day", "Transformation"],
         images: [
@@ -176,6 +178,7 @@ const promotionData = {
       },
       {
         customer: "Trintech",
+        competencies: ["Solution Delivery", "Differentiation", "Orchestration", "Analytical Capabilities"],
         subtitle: "Momentum + Agentforce for Sales Pilot — June–August 2026",
         type: "AI Pilot + Activation",
         images: [
@@ -201,6 +204,7 @@ const promotionData = {
       },
       {
         customer: "LightEdge Solutions",
+        competencies: ["Solution Discovery", "Solution Design", "Point of View (POV) Development", "Facilitation", "Objection Handling", "Differentiation", "Value Realization"],
         subtitle: "Agentforce & Data360 Workshop — April 2026",
         type: "Strategic Engagement",
         images: [
@@ -233,6 +237,7 @@ const promotionData = {
       },
       {
         customer: "Perfect Vision",
+        competencies: ["Business Foundations", "Industry Foundations", "Leveraging Customer Feedback", "Analytical Capabilities", "Value Articulation", "Objection Handling"],
         subtitle: "NNAOV — Saved Attrition — April 2026",
         type: "Attrition Save + Expansion",
         images: [
@@ -255,6 +260,7 @@ const promotionData = {
       },
       {
         customer: "C3 Ventures",
+        competencies: ["Business Foundations", "Solution Design", "Value Articulation"],
         subtitle: "Data360 + Agentforce — FY26 Q3",
         type: "Multi-Cloud Expansion",
         images: [
@@ -271,6 +277,7 @@ const promotionData = {
       },
       {
         customer: "NetSpark IP & Telecom",
+        competencies: ["Solution Delivery", "Consultative Selling", "Industry Foundations"],
         subtitle: "Sales Cloud + Spiff — FY26 Q1",
         type: "Technical Win",
         impacts: [
@@ -290,6 +297,7 @@ const promotionData = {
     programs: [
       {
         title: "Prospecting Agent Setup Enablement — TMT's First Golden Use Case",
+        competencies: ["Solution Orientation", "Solution Delivery", "Change Management"],
         period: "FY27 Q3 (August 2026)",
         coreSkill: "Building While Selling",
         impacts: [
@@ -312,6 +320,7 @@ const promotionData = {
       },
       {
         title: "Mastering the Agentic Contact Center — Customer Workshop",
+        competencies: ["Facilitation", "Product Capabilities & Technical Architecture", "Solution Orientation"],
         period: "FY27 (Austin, May 2026)",
         coreSkill: "Cross-Cloud Expertise",
         impacts: [
@@ -329,6 +338,7 @@ const promotionData = {
       },
       {
         title: "Lead Demo Driver — World Tour NYC SMB Keynote",
+        competencies: ["Facilitation", "Contextual Communication", "Solution Design"],
         period: "FY26",
         coreSkill: "Managing by Influence",
         link: { url: "https://www.salesforce.com/plus/experience/world_tour/series/best_of_agentforce_world_tour_nyc_spring_2025/episode/episode-s1e3", label: "Watch the Demo" },
@@ -350,6 +360,7 @@ const promotionData = {
       },
       {
         title: "SMB Data360 Tiger Team — Led Sales & Solutions Pillar",
+        competencies: ["Project Monitoring", "Orchestration", "Industry Foundations", "Point of View (POV) Development"],
         period: "FY26 (May 2025 – Jan 2026)",
         coreSkill: "Enablement at Scale",
         images: [
@@ -372,6 +383,7 @@ const promotionData = {
       },
       {
         title: "Palakk's Potluck — SE Release Enablement Program",
+        competencies: ["Change Management", "Facilitation"],
         period: "FY26 (May – Dec)",
         coreSkill: "Culture Building",
         image: "/Promotion-case-App/images/shoutouts/Potluck.png",
@@ -391,6 +403,7 @@ const promotionData = {
       },
       {
         title: "Possible Missionforce — Lead Content Creator & Presenter",
+        competencies: ["Differentiation", "Value Articulation", "Facilitation"],
         period: "FY26 (Dec – Jan)",
         coreSkill: "Enablement at Scale",
         images: [
