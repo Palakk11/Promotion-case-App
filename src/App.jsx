@@ -7,7 +7,6 @@ import CompetencyRadar from "./components/CompetencyRadar";
 import ACVTracker from "./components/ACVTracker";
 import DealExcellence from "./components/DealExcellence";
 import LeadershipPrograms from "./components/LeadershipPrograms";
-import Collaborative from "./components/Collaborative";
 import Mentorship from "./components/Mentorship";
 import Timeline from "./components/Timeline";
 import LookingAhead from "./components/LookingAhead";
@@ -33,7 +32,6 @@ function App() {
         <ACVTracker acvByYear={promotionData.acvByYear} />
         <DealExcellence dealData={promotionData.dealExcellence} />
         <LeadershipPrograms leadershipData={promotionData.leadershipPrograms} />
-        <Collaborative collabData={promotionData.collaborative} />
         <Mentorship items={promotionData.mentorship} />
         <LookingAhead />
         <footer className="app-footer">

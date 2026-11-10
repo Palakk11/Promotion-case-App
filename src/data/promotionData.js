@@ -77,13 +77,13 @@ const promotionData = {
   blackbelts: [
     "Citizen Architect",
     "Revenue Cloud",
-    "Agentforce / Einstein",
+    "Agentforce",
     "BVS Peer Certified",
   ],
 
   products: [
     "Data360", "Agentforce", "Slack",
-    "Sales Cloud", "Service Cloud", "Field Service", "Einstein 1",
+    "Sales Cloud", "Service Cloud", "Field Service",
   ],
 
   certifications: [
@@ -314,6 +314,23 @@ const promotionData = {
         ],
       },
       {
+        title: "Mastering the Agentic Contact Center — Customer Workshop",
+        period: "FY27 (Austin, May 2026)",
+        coreSkill: "Cross-Cloud Expertise",
+        impacts: [
+          "Part of a 10-city, VP-sponsored AMER roadshow — one of the highest-visibility customer programs in FY27",
+          "Hands-on-keyboard workshop: guided 40+ customers in the org, with live multi-cloud technical Q&A (Agentforce, Service Cloud, Data Cloud)",
+          "Proactively self-nominated — no formal assignment, secured approval independently",
+          "Filled a critical cross-cloud coverage gap not in scope for the specialist SE team",
+        ],
+        details: [
+          "Supported customers hands-on-keyboard and served as multi-cloud SME for 40+ customers across Agentforce Contact Center, Service Cloud, and Data Cloud — bridging gaps the Service Specialist leads couldn't cover alone",
+          "Handled live technical Q&A on Data360 questions in a session not originally scoped for it, extending the workshop's value beyond its designed boundaries",
+          "Operated as an extension of the specialist org, building trust across team lines without a formal handoff",
+        ],
+        outcome: "Without a generalist TMT SE present, customers' cross-cloud questions (especially D360) would have gone unanswered or required follow-up — slowing momentum at a high-stakes pipeline generation event.",
+      },
+      {
         title: "Lead Demo Driver — World Tour NYC SMB Keynote",
         period: "FY26",
         coreSkill: "Managing by Influence",
@@ -375,34 +392,12 @@ const promotionData = {
         ],
         outcome: "40+ SEs enabled | Recognized as a Culture Builder | Scalable, self-sustaining program",
       },
-    ],
-  },
-
-  collaborative: {
-    coreValue: "Team-player",
-    summary: `Palakk consistently demonstrates Lead SE behaviors through her commitment to collaborative, team-based selling — not only with her sales team but also the extended solutions team. She actively builds bridges between AEs and SEs, between product teams and customers, and between new and experienced team members.`,
-    items: [
-      {
-        title: "Mastering the Agentic Contact Center — Customer Workshop",
-        subtitle: "Austin — May 2026 (FY27)",
-        impacts: [
-          "Part of a 10-city, VP-sponsored AMER roadshow — one of the highest-visibility customer programs in FY27",
-          "40+ customers supported with live multi-cloud technical Q&A (Agentforce, Service Cloud, Data Cloud)",
-          "Proactively self-nominated — no formal assignment, secured approval independently",
-          "Filled a critical cross-cloud coverage gap not in scope for the specialist SE team",
-        ],
-        details: [
-          "Served as multi-cloud SME for 40+ customers across Agentforce Contact Center, Service Cloud, and Data Cloud — bridging gaps the Service Specialist leads couldn't cover alone",
-          "Handled live technical Q&A on Data360 questions in a session not originally scoped for it, extending the workshop's value beyond its designed boundaries",
-          "Operated as an extension of the specialist org, building trust across team lines without a formal handoff",
-        ],
-        whyItMattered: "Without a generalist TMT SE present, customers' cross-cloud questions (especially D360) would have gone unanswered or required follow-up — slowing momentum at a high-stakes pipeline generation event.",
-      },
       {
         title: "Possible Missionforce — Lead Content Creator & Presenter",
-        subtitle: "FY26 (Dec – Jan)",
+        period: "FY26 (Dec – Jan)",
+        coreSkill: "Enablement at Scale",
         images: [
-          { src: "/Promotion-case-App/images/shoutouts/Missionforce.png", caption: "Featured as speaker at the Agentic Contact Center roadshow" },
+          { src: "/Promotion-case-App/images/shoutouts/Missionforce.png", caption: "MissionForce speakers — Palakk presenting as Senior SE, Data Cloud Tiger Team" },
           { src: "/Promotion-case-App/images/shoutouts/Rebecca Missionforce.png", caption: "Rebecca Macias — shoutout for MissionForce Solutions Enablement" },
           { src: "/Promotion-case-App/images/shoutouts/Missionforce Peer shoutout .jpg", caption: "Jeet Shah — \"HUGE SHOUTOUT to Palakk for absolutely crushing it\" presenting Service Cloud + Data Cloud at MissionForce Enablement" },
         ],
@@ -415,6 +410,7 @@ const promotionData = {
           "Led two full enablement sessions for the SE community, covering Agentforce for Service use cases and demo approaches",
           "Created a reusable deck and framework for SEs to leverage in their own customer conversations",
         ],
+        outcome: "2 sessions | 100+ SEs enabled across SMB | Reusable Agentforce for Service deck and framework",
       },
     ],
   },

@@ -13,7 +13,6 @@ import {
   Zap,
   Target,
   ShieldCheck,
-  Handshake,
   Heart,
   Wrench,
   Rocket,
@@ -29,7 +28,6 @@ const sections = [
   { id: "acv", label: "ACV Track Record", icon: Target },
   { id: "deals", label: "Deal Excellence", icon: Briefcase },
   { id: "leadership", label: "Leadership & Programs", icon: Award },
-  { id: "collaborative", label: "Action Oriented", icon: Handshake },
   { id: "mentorship", label: "Mentorship", icon: Heart },
   { id: "looking-ahead", label: "Looking Ahead", icon: Rocket },
 ];
