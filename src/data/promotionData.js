@@ -54,11 +54,6 @@ const promotionData = {
     },
   ],
 
-  acvByYear: [
-    { year: "FY2024", total: "$1.37M", quarters: [] },
-    { year: "FY2023", total: "$539K", quarters: [] },
-  ],
-
   highlights: [
     { label: "Total ACV", value: "$7.19M", subtitle: "through FY27 Q3" },
     { label: "Award", value: "SE of the\nQuarter", subtitle: "FY27 Q2" },
@@ -95,16 +90,6 @@ const promotionData = {
       title: "Revenue Cloud Blackbelt (FY26)",
       badge: "RC",
       description: "Directly contributed to $55K+ ACV in SMB contributed deals as a specialist resource outside own book of business. Revenue Cloud expertise used in active deal cycles to provide expert POV and demo support.",
-    },
-    {
-      title: "Agentforce / Einstein Blackbelt (FY25)",
-      badge: "AF",
-      description: "First to close an Agentforce for Service deal in SMB and first Einstein 1 Field Service deal company-wide. Leveraged to build the Possible Missionforce Agentforce for Service enablement sessions enabling 100+ SEs.",
-    },
-    {
-      title: "BVS Peer Certified — First Cohort (FY24)",
-      badge: "BVS",
-      description: "Completed in the inaugural cohort. Supported 2 RM teams and won the BVS contest. BVS methodology embedded in discovery and executive briefings, including the LightEdge workshop pre-alignment series.",
     },
   ],
 
