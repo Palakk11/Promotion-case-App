@@ -26,7 +26,7 @@ export default function Hero({ data }) {
           </div>
           <div className="meta-item">
             <Calendar size={16} />
-            <span>Tenure: {candidate.tenure}</span>
+            <span>Senior SE Tenure: {candidate.tenure}</span>
           </div>
         </div>
 

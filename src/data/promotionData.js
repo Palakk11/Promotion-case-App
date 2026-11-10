@@ -5,7 +5,7 @@ const promotionData = {
     targetTitle: "Lead Solution Engineer",
     team: "TMT CMRCL AMER — Salesforce",
     manager: "[Manager Name]",
-    tenure: "4 Years 2 Months",
+    tenure: "1 Year 10 Months",
     date: "October 2026",
     tagline: "Turn Ambiguity into Certainty",
     slackUrl: "https://salesforce.enterprise.slack.com/team/U03A3NRRUBY",
@@ -72,7 +72,6 @@ const promotionData = {
     { label: "Award", value: "Solutions\nMVP", subtitle: "Oct FY26" },
     { label: "AEs Enabled", value: "250+", subtitle: "AEs | 15+ sessions FY26" },
     { label: "SEs Enabled", value: "100+", subtitle: "SEs | 3+ sessions FY26" },
-    { label: "Tenure", value: "4Y 2M", subtitle: "at Salesforce" },
   ],
 
   blackbelts: [
