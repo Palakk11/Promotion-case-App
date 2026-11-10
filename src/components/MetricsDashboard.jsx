@@ -49,7 +49,7 @@ export default function MetricsDashboard({ highlights, blackbelts, products, cer
   return (
     <section id="metrics" className="section">
       <div className="section-header">
-        <h2>Talent Readiness</h2>
+        <h2>Impact Creator</h2>
         <p className="section-subtitle">
           A consistent pattern of above-level performance across business results, enablement, and strategic ownership.
         </p>

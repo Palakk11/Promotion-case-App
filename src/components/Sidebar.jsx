@@ -24,7 +24,7 @@ const sections = [
   { id: "hero", label: "Overview", icon: User },
   { id: "preamble", label: "Business Case", icon: FileText },
   { id: "competencies", label: "Core Competencies", icon: BookOpen },
-  { id: "metrics", label: "Talent Readiness", icon: BarChart3 },
+  { id: "metrics", label: "Impact Creator", icon: BarChart3 },
   { id: "acv", label: "ACV Track Record", icon: Target },
   { id: "deals", label: "Deal Excellence", icon: Briefcase },
   { id: "leadership", label: "Leadership & Programs", icon: Award },

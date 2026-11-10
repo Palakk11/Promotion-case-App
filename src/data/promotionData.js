@@ -55,14 +55,6 @@ const promotionData = {
   ],
 
   acvByYear: [
-    { year: "FY2027", total: "$1.28M", subtitle: "Q1–Q3 to date", quarters: [] },
-    { year: "FY2026", total: "$1.4M", quarters: [] },
-    {
-      year: "FY2025",
-      total: "$2.6M",
-      subtitle: "#2 in SB",
-      quarters: [],
-    },
     { year: "FY2024", total: "$1.37M", quarters: [] },
     { year: "FY2023", total: "$539K", quarters: [] },
   ],
