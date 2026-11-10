@@ -160,7 +160,7 @@ const promotionData = {
       {
         customer: "NinjaOne",
         subtitle: "Agentic Enterprise AI Day — Austin, June 2026",
-        type: "Strategic Engagement",
+        type: ["Strategic Engagement", "AI Day", "Transformation"],
         images: [
           { src: "/Promotion-case-App/images/shoutouts/NinjaOne-AI-Day.jpg", caption: "Seth Elliott — Big AI Day shoutout: Palakk \"vital architecting the AI Day playbook\"" },
         ],

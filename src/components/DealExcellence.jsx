@@ -19,7 +19,7 @@ function DealCard({ deal, i }) {
           <span className="deal-subtitle">{deal.subtitle}</span>
         </div>
         <div className="deal-header-right">
-          <span className="deal-type-badge">{deal.type}</span>
+          {[].concat(deal.type).map(t => <span key={t} className="deal-type-badge">{t}</span>)}
           <ChevronDown size={20} className={`expand-icon ${expanded ? "rotated" : ""}`} />
         </div>
       </div>

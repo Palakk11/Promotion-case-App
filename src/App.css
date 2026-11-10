@@ -749,7 +749,7 @@
   max-width: 100%;
 }
 
-.metric-card:nth-child(2) .metric-value {
+.metric-value-text {
   font-size: 22px;
   white-space: pre-line;
 }

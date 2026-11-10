@@ -30,7 +30,7 @@ function AnimatedValue({ value, isVisible }) {
     return () => clearInterval(timer);
   }, [isVisible, value]);
 
-  return <span className="metric-value">{display}</span>;
+  return <span className={value.includes("\n") ? "metric-value metric-value-text" : "metric-value"}>{display}</span>;
 }
 
 export default function MetricsDashboard({ highlights, blackbelts, products, certifications }) {
