@@ -262,6 +262,24 @@
   line-height: 1.8;
 }
 
+.exec-summary-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.exec-summary-images .program-image {
+  max-width: none;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .exec-summary-images {
+    grid-template-columns: 1fr;
+  }
+}
+
 .role-description {
   background: var(--bg-card);
   border: 1px solid var(--border);
