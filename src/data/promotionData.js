@@ -111,6 +111,8 @@ const promotionData = {
     summary: `Across FY27, Palakk demonstrated the ownership, technical depth, and cross-functional leadership that define a Lead SE. She doesn't demo products — she builds trust, and adapts as the business evolves with the NNAOV model and AI landscape. Her approach starts with deep discovery, connecting Salesforce's solutions to each customer's specific business outcomes and industry context.`,
     shoutouts: [
       { src: "/Promotion-case-App/images/shoutouts/Top10-Q3-stack-rank.jpg", caption: "Install Base stack rank as of Oct 30, 2026 — top 10 with $1.37M split won and $1.53M pipe" },
+      { src: "/Promotion-case-App/images/shoutouts/Kevin-Drake-shoutout.jpg", caption: "Kevin Drake — Team Shout-Out: \"a rockstar from the get go… a huge influencer in the AI movement from day 1\" (June 2026)" },
+      { src: "/Promotion-case-App/images/shoutouts/Neogov-win.jpg", caption: "Nick Pauze — NEOGOV Agentforce for Service + Contact Center win: Palakk \"played a huge role in helping go under the hood\" on the technical depth of Agentforce" },
       { src: "/Promotion-case-App/images/shoutouts/SE-of-the-quarter.png", caption: "Team Solutioneers — named FY27 SE of the Quarter alongside Chris Decker" },
       { src: "/Promotion-case-App/images/shoutouts/David.png", caption: "David Chen & Eddie Prasch — shoutout for crushing the Sales & Service demo on a $53K Commerce deal" },
       { src: "/Promotion-case-App/images/shoutouts/Lindsay.png", caption: "Lindsay Hawxhurst — $52K big deal alert, first week of the quarter" },
@@ -364,7 +366,7 @@ const promotionData = {
         period: "FY26 (May 2025 – Jan 2026)",
         coreSkill: "Enablement at Scale",
         images: [
-          { src: "/Promotion-case-App/images/shoutouts/Tigerteam.png", caption: "Shoutout from Christie Nelson — recognizing Tiger Team enablement contributions" },
+          { src: "/Promotion-case-App/images/shoutouts/Tigerteam.png", caption: "Shoutouts from Christie Nelson and Samiran Dwivedi — recognizing Data Cloud enablement in the SMB AE Onboarding Program" },
           { src: "/Promotion-case-App/images/shoutouts/FY27 Kickoff.png", caption: "Named FY26 Top Field Representative at FY27 Kickoff" },
         ],
         impacts: [
