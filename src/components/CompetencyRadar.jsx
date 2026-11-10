@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { competencyAreas, seniorLevel } from "../data/competencyFramework";
+import { featuredCompetencies } from "../data/competencyFramework";
 
 const competencies = [
   { label: "Technical Depth", score: 95, description: "Multi-cloud expertise across 9+ products, AI-native demo engineering with Claude + Cursor" },
@@ -14,48 +14,39 @@ const competencies = [
 ];
 
 function CompetencyTable() {
+  const badge = (level) => `level-badge ${level === "Advanced" ? "level-lead-advanced" : "level-lead"}`;
   return (
     <div className="competency-table-wrapper" style={{ marginTop: 40 }}>
       <table className="competency-table">
         <thead>
           <tr>
             <th>Competency</th>
-            <th>Senior</th>
             <th>Lead Target</th>
+            <th>Demonstrated</th>
             <th>Justifying Examples</th>
           </tr>
         </thead>
-        {competencyAreas.map((area) => (
-          <tbody key={area.area}>
-            <tr className="comp-area-row">
-              <td colSpan={4}>{area.area}</td>
-            </tr>
-            {area.competencies.map((row, i) => (
-              <motion.tr
-                key={row.name}
-                className="comp-row"
-                initial={{ opacity: 0, x: -10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05, duration: 0.4 }}
-              >
-                <td className="comp-name">
-                  {row.name}
-                  {row.up && <span className="comp-up">Up from Senior</span>}
-                </td>
-                <td>
-                  <span className="level-badge level-senior">{seniorLevel(row)}</span>
-                </td>
-                <td>
-                  <span className={`level-badge ${row.lead === "Advanced" ? "level-lead-advanced" : "level-lead"}`}>
-                    {row.lead}
-                  </span>
-                </td>
-                <td className="comp-evidence">{row.evidence}</td>
-              </motion.tr>
-            ))}
-          </tbody>
-        ))}
+        <tbody>
+          {featuredCompetencies.map((row, i) => (
+            <motion.tr
+              key={row.name}
+              className="comp-row"
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05, duration: 0.4 }}
+            >
+              <td className="comp-name">
+                {row.name}
+                <span className="comp-area">{row.area}</span>
+                {row.up && <span className="comp-up">Step-up for Lead</span>}
+              </td>
+              <td><span className={badge(row.lead)}>{row.lead}</span></td>
+              <td><span className={badge(row.demonstrated)}>{row.demonstrated}</span></td>
+              <td className="comp-evidence">{row.evidence}</td>
+            </motion.tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
@@ -172,7 +163,7 @@ export default function CompetencyRadar() {
     <section id="competencies" className="section" ref={containerRef}>
       <div className="section-header">
         <h2>Core Competencies & Scope of the Role</h2>
-        <p className="section-subtitle">The Global SE Competency Framework sets Lead SE targets for 20 competencies across 6 areas, 9 of which step up from Senior. Palakk is already performing at or above the Lead-level expectation in each, with FY26–FY27 examples below.</p>
+        <p className="section-subtitle">The ten Lead SE competencies from the Global SE Competency Framework where Palakk's FY26–FY27 work is strongest: at or above the Lead target in each, and Advanced in five.</p>
       </div>
 
       <div className="competency-layout">
