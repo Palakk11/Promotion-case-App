@@ -23,7 +23,6 @@ function App() {
         <CompetencyRadar />
         <MetricsDashboard
           highlights={promotionData.highlights}
-          blackbelts={promotionData.blackbelts}
           products={promotionData.products}
           certifications={promotionData.certifications}
         />

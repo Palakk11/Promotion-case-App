@@ -33,7 +33,7 @@ function AnimatedValue({ value, isVisible }) {
   return <span className={value.includes("\n") ? "metric-value metric-value-text" : "metric-value"}>{display}</span>;
 }
 
-export default function MetricsDashboard({ highlights, blackbelts, products, certifications }) {
+export default function MetricsDashboard({ highlights, products, certifications }) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -73,14 +73,6 @@ export default function MetricsDashboard({ highlights, blackbelts, products, cer
       </div>
 
       <div className="badges-section" style={{ marginTop: 28 }}>
-        <div className="badges-group">
-          <h4>Blackbelts</h4>
-          <div className="badge-list">
-            {blackbelts.map((b, i) => (
-              <span key={i} className="badge blackbelt">{b}</span>
-            ))}
-          </div>
-        </div>
         <div className="badges-group">
           <h4>Product Expertise</h4>
           <div className="badge-list">
