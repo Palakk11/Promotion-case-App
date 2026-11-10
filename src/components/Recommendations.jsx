@@ -10,14 +10,22 @@ function RecommendationCard({ rec, i }) {
       viewport={{ once: true }}
       transition={{ delay: i * 0.08, duration: 0.4 }}
     >
-      <Quote size={18} className="recommendation-quote-icon" />
-      <blockquote>{rec.quote}</blockquote>
+      {rec.quoteInImage && rec.image ? (
+        <div className="recommendation-image recommendation-image-lead">
+          <img src={rec.image} alt={`${rec.author}: ${rec.quote}`} />
+        </div>
+      ) : (
+        <>
+          <Quote size={18} className="recommendation-quote-icon" />
+          <blockquote>{rec.quote}</blockquote>
+        </>
+      )}
       <figcaption>
         <span className="recommendation-author">{rec.author}</span>
         {rec.role && <span className="recommendation-role">{rec.role}</span>}
         {rec.context && <span className="recommendation-context">{rec.context}</span>}
       </figcaption>
-      {rec.image && (
+      {rec.image && !rec.quoteInImage && (
         <div className="recommendation-image">
           <img src={rec.image} alt={`${rec.author} — ${rec.context || "shoutout"}`} />
         </div>

@@ -427,6 +427,7 @@ const promotionData = {
 
   // Recommendations — shoutouts from sales teams and peers.
   // To add one: copy a block into salesTeam or peers. role, context and image are optional.
+  // quoteInImage: true shows the screenshot in place of the quote text (the quote stays as the image's alt text).
   recommendations: {
     salesTeam: [
       {
@@ -441,6 +442,7 @@ const promotionData = {
         role: "Account Executive",
         context: "NEOGOV Agentforce for Service + Contact Center win — October 2026",
         image: "/Promotion-case-App/images/shoutouts/Neogov-win.jpg",
+        quoteInImage: true,
       },
       {
         quote: "What stood out most about Palakk was the combination of her positivity, curiosity, and willingness to dive into any level of detail needed to move a customer conversation forward. She consistently asked the right questions, challenged us to go a layer deeper, and had a great ability to uncover what was really driving a customer's needs rather than simply addressing what was on the surface... She played a meaningful role in helping us navigate and ultimately close several key deals this fiscal year.",
@@ -448,6 +450,7 @@ const promotionData = {
         role: "Account Executive",
         context: "Note to SE Director Riley Rhodes in his final week — August 2026",
         image: "/Promotion-case-App/images/shoutouts/Chet-Kaiser-note.jpg",
+        quoteInImage: true,
       },
       {
         quote: "Palakk just rolled with it, leveraged resources to get help when needed and worked overtime to pull it off... They specifically called out how specific to them our whole session was.",
