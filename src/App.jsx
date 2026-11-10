@@ -1,5 +1,6 @@
 import Sidebar from "./components/Sidebar";
 import ScrollProgress from "./components/ScrollProgress";
+import ImageLightbox from "./components/ImageLightbox";
 import Hero from "./components/Hero";
 import Preamble from "./components/Preamble";
 import MetricsDashboard from "./components/MetricsDashboard";
@@ -17,6 +18,7 @@ function App() {
     <div className="app-layout">
       <ScrollProgress />
       <Sidebar />
+      <ImageLightbox />
       <main className="main-content">
         <Hero data={promotionData} />
         <Preamble />
