@@ -54,7 +54,7 @@ export default function Hero({ data }) {
         <div className="exec-summary-images">
           <figure className="program-image">
             <img src={`${import.meta.env.BASE_URL}images/shoutouts/Top-field-reps-AHC-FY27.jpg`} alt="Top Field Representatives globally" />
-            <figcaption className="program-image-caption">Named among the top Field Representatives globally — FY27 All Hands Kickoff call</figcaption>
+            <figcaption className="program-image-caption">Named among the top Field Representatives globally — Adam Alfano's FY27 All Hands Kickoff Call</figcaption>
           </figure>
           <figure className="program-image">
             <img src={`${import.meta.env.BASE_URL}images/shoutouts/SE-of-the-quarter.png`} alt="SE of the Quarter" />
