@@ -440,6 +440,7 @@ const promotionData = {
         author: "Nick Pauze",
         role: "Account Executive",
         context: "NEOGOV Agentforce for Service + Contact Center win — October 2026",
+        image: "/Promotion-case-App/images/shoutouts/Neogov-win.jpg",
       },
       {
         quote: "What stood out most about Palakk was the combination of her positivity, curiosity, and willingness to dive into any level of detail needed to move a customer conversation forward. She consistently asked the right questions, challenged us to go a layer deeper, and had a great ability to uncover what was really driving a customer's needs rather than simply addressing what was on the surface... She played a meaningful role in helping us navigate and ultimately close several key deals this fiscal year.",
