@@ -8,7 +8,6 @@ import ACVTracker from "./components/ACVTracker";
 import DealExcellence from "./components/DealExcellence";
 import LeadershipPrograms from "./components/LeadershipPrograms";
 import Mentorship from "./components/Mentorship";
-import Timeline from "./components/Timeline";
 import LookingAhead from "./components/LookingAhead";
 import promotionData from "./data/promotionData";
 import "./App.css";
@@ -20,7 +19,6 @@ function App() {
       <Sidebar />
       <main className="main-content">
         <Hero data={promotionData} />
-        <Timeline careerJourney={promotionData.careerJourney} />
         <Preamble />
         <CompetencyRadar />
         <MetricsDashboard

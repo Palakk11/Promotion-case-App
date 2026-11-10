@@ -6,7 +6,6 @@ import {
   Users,
   Briefcase,
   MessageSquareQuote,
-  Clock,
   BookOpen,
   ChevronLeft,
   ChevronRight,
@@ -21,7 +20,6 @@ import {
 
 const sections = [
   { id: "hero", label: "Overview", icon: User },
-  { id: "timeline", label: "Journey", icon: Clock },
   { id: "preamble", label: "Business Case", icon: FileText },
   { id: "competencies", label: "Core Competencies", icon: BookOpen },
   { id: "metrics", label: "Impact Creator", icon: BarChart3 },
