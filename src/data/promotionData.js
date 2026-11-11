@@ -115,7 +115,6 @@ const promotionData = {
       { src: "/Promotion-case-App/images/shoutouts/David.png", caption: "David Chen & Eddie Prasch — shoutout for crushing the Sales & Service demo on a $53K Commerce deal" },
       { src: "/Promotion-case-App/images/shoutouts/Lindsay.png", caption: "Lindsay Hawxhurst — $52K big deal alert, first week of the quarter" },
       { src: "/Promotion-case-App/images/shoutouts/Jeet.png", caption: "Jeet Shah — congratulations on closing Agentforce 1 + Rev Cloud" },
-      { src: "/Promotion-case-App/images/shoutouts/Eddie-Prasch-Deal-shoutout.jpg", caption: "Eddie Prasch — \"Big thank you to Palakk for her support, could not have done without you!\" — $32K Agentforce + RevCloud upgrade win" },
     ],
     deals: [
       {
