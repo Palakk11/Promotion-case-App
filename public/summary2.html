@@ -393,6 +393,22 @@
     }
 
     /* Print */
+    /* Competencies */
+    .comp-table { width: 100%; border-collapse: collapse; font-size: 9.5px; margin-bottom: 12px; }
+    .comp-table th { text-align: left; font-size: 8.5px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 6px; border-bottom: 1px solid #e2e8f0; }
+    .comp-table td { padding: 4px 6px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+    .comp-table .name { font-weight: 700; color: #0f172a; white-space: nowrap; }
+    .comp-table .area { display: block; font-weight: 400; font-size: 8.5px; color: #64748b; }
+    .lvl { font-weight: 700; color: #1e40af; white-space: nowrap; }
+    .lvl.adv { color: #b45309; }
+
+    /* Recommendations */
+    .recs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; margin-bottom: 12px; }
+    .rec { border-left: 3px solid #1e40af; padding: 4px 8px; font-size: 9.5px; color: #334155; font-style: italic; line-height: 1.45; break-inside: avoid; }
+    .rec cite { display: block; margin-top: 3px; font-style: normal; font-weight: 600; color: #0f172a; font-size: 9px; }
+    .rec cite span { font-weight: 400; color: #64748b; }
+    .recs-group { font-size: 10px; font-weight: 700; color: #1e40af; text-transform: uppercase; letter-spacing: 0.6px; margin: 4px 0 6px; }
+
     @media print {
       body { padding: 20px 24px; font-size: 10px; }
       @page { margin: 0.4in; size: letter; }
@@ -489,6 +505,22 @@
     <span class="first-pill">TMT&rsquo;s first Golden Use Case &mdash; Prospecting Agent setup</span>
   </div>
 
+  <!-- Core Competencies -->
+  <h2>Core Competencies &mdash; Lead Target vs. Demonstrated</h2>
+  <table class="comp-table">
+    <tr><th>Competency</th><th>Lead Target</th><th>Demonstrated</th><th>Justifying Examples (FY26&ndash;FY27)</th></tr>
+        <tr><td class="name">Objection Handling<span class="area">Customer Communication</span></td><td class="lvl adv">Advanced</td><td class="lvl adv">Advanced</td><td>LightEdge C-level pushback (&ldquo;Why didn&rsquo;t ServiceNow do this for us?&rdquo;); PerfectVision $631K attrition reframed as expansion; Storable renewed early vs. Intercom Fin</td></tr>
+        <tr><td class="name">Facilitation<span class="area">Customer Communication</span></td><td class="lvl">Intermediate</td><td class="lvl adv">Advanced</td><td>World Tour NYC keynote to 200+; hands-on-keyboard Contact Center workshop for 40+ customers; NinjaOne 4.5-hour AI Day</td></tr>
+        <tr><td class="name">Orchestration<span class="area">Team Selling</span></td><td class="lvl">Intermediate</td><td class="lvl adv">Advanced</td><td>Storable: right resource at each stage, from Riley Rhodes for executive alignment to strategic SEs and architects</td></tr>
+        <tr><td class="name">Consultative Selling<span class="area">Team Selling</span></td><td class="lvl">Intermediate</td><td class="lvl adv">Advanced</td><td>Storable $195.8K early renewal; LightEdge end-to-end with architects, BVS and execs; $55K+ Revenue Cloud outside own book</td></tr>
+        <tr><td class="name">Solution Orientation<span class="area">Action Orientation</span></td><td class="lvl adv">Advanced</td><td class="lvl adv">Advanced</td><td>Prospecting Agent setup: idea to recorded enablement in 3 business days, TMT&rsquo;s first Golden Use Case</td></tr>
+        <tr><td class="name">Differentiation<span class="area">Research &amp; Discovery</span></td><td class="lvl">Intermediate</td><td class="lvl">Intermediate</td><td>LightEdge workshop format sent to ServiceNow to replicate; first Momentum win at LightEdge</td></tr>
+        <tr><td class="name">Business Foundations<span class="area">Research &amp; Discovery</span></td><td class="lvl">Intermediate</td><td class="lvl">Intermediate</td><td>PerfectVision dealer marketing gap post-AT&amp;T; C3 single-product renewal to multi-cloud ($74K)</td></tr>
+        <tr><td class="name">Product Capabilities &amp; Technical Architecture<span class="area">Research &amp; Discovery</span></td><td class="lvl">Intermediate</td><td class="lvl">Intermediate</td><td>Citizen Architect and Revenue Cloud Blackbelt (FY26); multi-cloud SME at the Contact Center workshop</td></tr>
+        <tr><td class="name">Solution Design<span class="area">Solutioning</span></td><td class="lvl">Intermediate</td><td class="lvl">Intermediate</td><td>LightEdge custom multi-cloud journeys; World Tour NYC keynote demos built from scratch</td></tr>
+        <tr><td class="name">Leveraging Customer Feedback<span class="area">Value Selling</span></td><td class="lvl">Intermediate</td><td class="lvl">Intermediate</td><td>PerfectVision CDP/Data Cloud play before the customer named the need; LightEdge readback</td></tr>
+  </table>
+
   <div class="two-col">
 
     <!-- LEFT COLUMN -->
@@ -504,6 +536,14 @@
 
       <!-- Deal Excellence -->
       <h2>Deal Excellence</h2>
+      <div class="deal">
+        <div class="deal-title">Storable <span class="deal-badge badge-green">Early Renewal</span></div>
+        <p><strong>Ran the technical side end to end</strong> of a Salesforce transformation as a new SVP of RevOps set out to fix a fragmented stack (two Salesforce orgs, a Zoho org and 20+ tools). <strong>Orchestrated the right resource at each stage</strong> &mdash; Riley Rhodes for executive alignment, strategic SEs, and technical and enterprise architects &mdash; and <strong>renewed early</strong> while Intercom Fin pitched to replace the 261-seat Service Cloud.</p>
+        <div class="deal-impacts">
+          <span class="deal-impact">$195.8K ACV closed Oct 30</span>
+          <span class="deal-impact">Q4 pipeline: SPM, A4S, Data 360</span>
+        </div>
+      </div>
       <div class="deal">
         <div class="deal-title">LightEdge Solutions <span class="deal-badge badge-green">$1M+ Pipeline</span></div>
         <p><strong>Led solution discovery</strong> across the customer hierarchy up to executive level. <strong>Facilitated</strong> a 2-day onsite <strong>discovery workshop</strong>, <strong>designed custom multi-cloud user journeys</strong> (Agentforce + Data360), and built demos using <strong>best-in-class demo tools</strong> (Claude + Cursor). <strong>Orchestrated</strong> cross-functional stakeholders &mdash; Enterprise Architects, Cloud SEs, BVS, and executive sponsors. <strong>Created a custom POV</strong> balancing short-term wins with long-term platform vision. <strong>Proactively followed up post-sale</strong> to maintain deal momentum.</p>
@@ -528,7 +568,7 @@
 
       <div class="deal">
         <div class="deal-title">Trintech <span class="deal-badge badge-blue">AI Pilot</span></div>
-        <p><strong>Owned the Agentforce for Sales demo</strong> for the CCO and RevOps leadership, positioning Momentum + Agentforce as complementary. Signed a 10-user pilot with a path to 70 users (+$100.8K ACV), and <strong>supported Prospecting Agent activation</strong> in production.</p>
+        <p><strong>Owned the Agentforce for Sales demo</strong> for the CCO and RevOps leadership, positioning Momentum + Agentforce as complementary. Signed a 10-user pilot with a path to 70 users (+$100.8K ACV), and <strong>supported Prospecting Agent activation</strong>: the first Prospecting Agent-in-a-day deployment created 151 prospects in production for 7 pilot reps.</p>
       </div>
 
       <!-- Testimonial -->
@@ -575,13 +615,15 @@
       </div>
 
       <!-- Certs -->
-      <h2>Blackbelts &amp; Certifications</h2>
+      <h2>Certifications &amp; Expertise</h2>
       <div class="certs">
-        <span class="cert-pill">Citizen Architect &mdash; Cross-Cloud Architecture</span>
-        <span class="cert-pill">Revenue Cloud &mdash; Consultative Selling</span>
-        <span class="cert-pill">Agentforce &mdash; Product Capabilities</span>
-        <span class="cert-pill">BVS 1st Cohort &mdash; Value Realization</span>
-        <span class="cert-pill">AI-Native Demo &mdash; Solution Delivery</span>
+        <span class="cert-pill">AI-Native Demo Engineering</span>
+        <span class="cert-pill">Citizen Architect (FY26)</span>
+        <span class="cert-pill">Revenue Cloud Blackbelt (FY26)</span>
+        <span class="cert-pill">BVS Peer Certified &mdash; First Cohort</span>
+      </div>
+      <div class="certs">
+        <span class="cert-pill">Product expertise: Data360 &middot; Agentforce &middot; Slack &middot; Sales Cloud &middot; Service Cloud &middot; Field Service</span>
       </div>
 
       <!-- Mentorship -->
@@ -604,6 +646,23 @@
       </div>
 
     </div>
+  </div>
+
+  <!-- RECOMMENDATIONS -->
+  <h2>Recommendations</h2>
+  <div class="recs-group">From Sales Teams</div>
+  <div class="recs">
+      <div class="rec">&ldquo;Palakk did an incredible job driving the deep discovery we needed with multiple lines of business&hellip; She was vital architecting the AI Day playbook here and nailing her presentation to the customer!&rdquo;<cite>Seth Elliott <span>&mdash; Account Executive, NinjaOne AI Day</span></cite></div>
+      <div class="rec">&ldquo;What stood out most about Palakk was the combination of her positivity, curiosity, and willingness to dive into any level of detail needed to move a customer conversation forward.&rdquo;<cite>Chet Kaiser <span>&mdash; Account Executive</span></cite></div>
+      <div class="rec">&ldquo;Anthony Dotson, Matt Czarny, Palakk Shrivastava and Logan Sackley played a huge role in helping go under the hood and show them the technical depth of Agentforce&hellip; across the org.&rdquo;<cite>Nick Pauze <span>&mdash; Account Executive, NEOGOV win</span></cite></div>
+      <div class="rec">&ldquo;Palakk just rolled with it, leveraged resources to get help when needed and worked overtime to pull it off&hellip; I think the customer was the beneficiary.&rdquo;<cite>Nick Pauze <span>&mdash; Account Executive, LightEdge workshop</span></cite></div>
+  </div>
+  <div class="recs-group">From Peers &amp; Leaders</div>
+  <div class="recs">
+      <div class="rec">&ldquo;In the short time you&rsquo;ve been on our team this year, you&rsquo;ve made an impact that most people take years to build&hellip; raised the bar for everyone around you.&rdquo;<cite>Riley Rhodes <span>&mdash; SE Director</span></cite></div>
+      <div class="rec">&ldquo;She was a rockstar from the get go and has only honed her craft further and further. She was a huge influencer in the AI movement from day 1.&rdquo;<cite>Kevin Drake <span>&mdash; Lead Account SE</span></cite></div>
+      <div class="rec">&ldquo;Huge shoutout to Palakk and Ali for leading the way and recording the enablement for setting up Prospecting Agent.&rdquo;<cite>Brent Healy <span>&mdash; Senior Director, Solution Engineering</span></cite></div>
+      <div class="rec">&ldquo;Palakk Shrivastava &amp; Anthony Dotson &mdash; Technical Team Powerhouse.&rdquo;<cite>Bill Nickolson <span>&mdash; Lead Account SE, Service Cloud, NEOGOV win</span></cite></div>
   </div>
 
   <!-- LOOKING AHEAD -->
