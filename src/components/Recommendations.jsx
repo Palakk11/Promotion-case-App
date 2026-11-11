@@ -4,7 +4,7 @@ import { Quote, Briefcase, Users } from "lucide-react";
 function RecommendationCard({ rec, i }) {
   return (
     <motion.figure
-      className="recommendation-card"
+      className={`recommendation-card ${rec.featured ? "recommendation-featured" : ""}`}
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

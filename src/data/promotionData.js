@@ -424,9 +424,17 @@ const promotionData = {
 
   // Recommendations — shoutouts from sales teams and peers.
   // To add one: copy a block into salesTeam or peers. role, context and image are optional.
+  // featured: true spans the full row (for longer written recommendations).
   // quoteInImage: true shows the screenshot in place of the quote text (the quote stays as the image's alt text).
   recommendations: {
     salesTeam: [
+      {
+        quote: "I'm happy to recommend Palakk Shrivastava, Senior Account SE, for the support she has given my team. Palakk is always willing to jump in on deals, from early discovery through the late-stage push. She leads technical conversations with customers and ties them to their business priorities. She's also proactive about flagging risks and keeping deals on track. She is a great partner to my reps. They trust her and look for her on their opportunities, and she works well across the whole account team. She helps us move deals forward and close them. Palakk is a real asset to my team, and I'd gladly work with her on any opportunity.",
+        author: "Matthew Erhorn",
+        role: "Regional Vice President",
+        context: "Written recommendation — November 2026",
+        featured: true,
+      },
       {
         quote: "What stood out most about Palakk was the combination of her positivity, curiosity, and willingness to dive into any level of detail needed to move a customer conversation forward. She consistently asked the right questions, challenged us to go a layer deeper, and had a great ability to uncover what was really driving a customer's needs rather than simply addressing what was on the surface... She played a meaningful role in helping us navigate and ultimately close several key deals this fiscal year.",
         author: "Chet Kaiser",

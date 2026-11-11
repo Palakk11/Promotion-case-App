@@ -2295,3 +2295,12 @@
   align-items: center;
   background: #fff;
 }
+
+.recommendation-featured {
+  grid-column: 1 / -1;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.recommendation-featured blockquote {
+  font-size: 15px;
+}
