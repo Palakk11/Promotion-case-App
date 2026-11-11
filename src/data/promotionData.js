@@ -63,12 +63,15 @@ const promotionData = {
     },
   ],
 
+  careerAcvTotal: "$7.809M",
+
   acvByYear: [
     { year: "FY2027", total: "$2.1M", subtitle: "Q1–Q3 to date", quarters: [] },
     { year: "FY2026", total: "$1.4M", quarters: [] },
   ],
 
   highlights: [
+    { label: "Career ACV", value: "$7.8M", subtitle: "$7.809M total career contribution" },
     { label: "ACV", value: "$2.1M", subtitle: "FY27 through Q3" },
     { label: "Award", value: "SE of the\nQuarter", subtitle: "FY27 Q2" },
     { label: "Award", value: "Solutions\nMVP", subtitle: "Oct FY26" },

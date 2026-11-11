@@ -29,7 +29,7 @@ function App() {
           products={promotionData.products}
           certifications={promotionData.certifications}
         />
-        <ACVTracker acvByYear={promotionData.acvByYear} />
+        <ACVTracker acvByYear={promotionData.acvByYear} careerTotal={promotionData.careerAcvTotal} />
         <DealExcellence dealData={promotionData.dealExcellence} />
         <LeadershipPrograms leadershipData={promotionData.leadershipPrograms} />
         <Mentorship items={promotionData.mentorship} />

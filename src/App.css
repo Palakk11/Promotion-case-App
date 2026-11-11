@@ -818,7 +818,7 @@
 /* ========== METRICS ========== */
 .metrics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-bottom: 32px;
 }
@@ -2002,7 +2002,7 @@
 
   /* Metrics */
   .metrics-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 8px;
     margin-bottom: 16px;
   }
@@ -2307,4 +2307,10 @@
 
 .recommendation-featured blockquote {
   font-size: 15px;
+}
+
+.acv-table tfoot .acv-table-career td {
+  border-top: 2px solid var(--border);
+  font-weight: 700;
+  color: var(--gold-light);
 }

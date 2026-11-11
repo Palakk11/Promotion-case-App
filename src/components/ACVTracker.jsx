@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function ACVTracker({ acvByYear }) {
+export default function ACVTracker({ acvByYear, careerTotal }) {
   const sorted = [...acvByYear].sort((a, b) => {
     const ya = parseInt(a.year.replace(/\D/g, ""));
     const yb = parseInt(b.year.replace(/\D/g, ""));
@@ -42,6 +42,17 @@ export default function ACVTracker({ acvByYear }) {
               );
             })}
           </tbody>
+          {careerTotal && (
+            <tfoot>
+              <tr className="acv-table-career">
+                <td className="acv-table-year">Career Total</td>
+                <td className="acv-table-total">
+                  {careerTotal}
+                  <span className="acv-table-note"> — total career ACV contribution</span>
+                </td>
+              </tr>
+            </tfoot>
+          )}
         </table>
       </motion.div>
     </section>
