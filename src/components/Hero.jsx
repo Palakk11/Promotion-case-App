@@ -41,14 +41,16 @@ export default function Hero({ data }) {
               <span key={v} className="core-value-pill">{v}</span>
             ))}
           </div>
-          <p>{executiveSummary}</p>
+          {[].concat(executiveSummary).map((para, i) => (
+            <p key={i}>{para}</p>
+          ))}
         </div>
 
         <ul className="values-detail-list">
-          <li><strong>Customer Focus</strong> — every engagement moves the needle for the customer's business and ours.</li>
-          <li><strong>Trust</strong> — consistency, candor, and empathy in every relationship.</li>
-          <li><strong>Curiosity</strong> — the best SE is a perpetual learner; she ramps first, then enables others.</li>
-          <li><strong>Collaboration</strong> — multiplying impact beyond her own deals, fostering shared success that outlasts any single quarter.</li>
+          <li><strong>Customer Focus</strong> — builds for the customer in the room, not a generic demo.</li>
+          <li><strong>Trust</strong> — flags risks early and follows through, so reps look for her on their deals.</li>
+          <li><strong>Curiosity</strong> — first to build with what's new, then teaches it to the team.</li>
+          <li><strong>Collaboration</strong> — brings the right people in at each stage of a deal.</li>
         </ul>
 
         <div className="exec-summary-images">

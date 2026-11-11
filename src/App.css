@@ -262,6 +262,10 @@
   line-height: 1.8;
 }
 
+.executive-summary p + p {
+  margin-top: 12px;
+}
+
 .exec-summary-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
