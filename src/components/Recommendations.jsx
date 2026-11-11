@@ -53,7 +53,7 @@ export default function Recommendations({ data }) {
   return (
     <section id="recommendations" className="section">
       <div className="section-header">
-        <h2>Recommendations</h2>
+        <h2>Endorsements</h2>
         <p className="section-subtitle">In their words: shoutouts from the sales teams and peers Palakk works with.</p>
       </div>
       <Group title="From Sales Teams" icon={Briefcase} items={data.salesTeam} />
