@@ -15,6 +15,7 @@ const promotionData = {
     "Palakk is the SE teams pull in when the path isn't clear yet. She turns ambiguity into certainty, and she brings people with her. That's the job of a Lead SE, and it's how she already works.",
     "She leads from the front: in her first week on LightEdge, her workshop had the customer asking, \"Why didn't ServiceNow do this for us?\" She orchestrates: at Storable, she brought in executives, strategic SEs and architects at the right moments to renew early against a competitor. And she multiplies: 250+ AEs and 100+ SEs enabled, plus a Prospecting Agent enablement built in three days that became TMT's first Golden Use Case.",
     "Her RVP says his reps look for her on their deals. SE of the Quarter, $2.1M in ACV in FY27 through Q3, and a team that's better for working with her.",
+    "Her approach is grounded in core values she truly believes in and lives every day.",
   ],
 
   roleDescription: `I am a Senior Account SE for TMT CMRCL AMER at Salesforce. I partner closely with my AEs, solutions leadership, and extended SE ecosystem to ensure we deliver great customer engagements and drive meaningful revenue. My priority is consistent, adaptable performance — showing up every quarter with strong ACV, deep product knowledge, and a genuine desire to elevate everyone around me.`,
