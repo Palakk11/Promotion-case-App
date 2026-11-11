@@ -111,12 +111,10 @@ const promotionData = {
     summary: `Across FY27, Palakk demonstrated the ownership, technical depth, and cross-functional leadership that define a Lead SE. She doesn't demo products — she builds trust, and adapts as the business evolves with the NNAOV model and AI landscape. Her approach starts with deep discovery, connecting Salesforce's solutions to each customer's specific business outcomes and industry context.`,
     shoutouts: [
       { src: "/Promotion-case-App/images/shoutouts/Top10-Q3-stack-rank.jpg", caption: "Install Base stack rank as of Oct 30, 2026 — top 10 with $1.37M split won and $1.53M pipe" },
-      { src: "/Promotion-case-App/images/shoutouts/Kevin-Drake-shoutout.jpg", caption: "Kevin Drake — Team Shout-Out: \"a rockstar from the get go… a huge influencer in the AI movement from day 1\" (June 2026)" },
-      { src: "/Promotion-case-App/images/shoutouts/Neogov-win.jpg", caption: "Nick Pauze — NEOGOV Agentforce for Service + Contact Center win: Palakk \"played a huge role in helping go under the hood\" on the technical depth of Agentforce" },
+      { src: "/Promotion-case-App/images/shoutouts/chris decker.jpg", caption: "Chris Decker — celebrating TMT Consumption Go Lives and Attrition Saves including PerfectVision" },
       { src: "/Promotion-case-App/images/shoutouts/David.png", caption: "David Chen & Eddie Prasch — shoutout for crushing the Sales & Service demo on a $53K Commerce deal" },
       { src: "/Promotion-case-App/images/shoutouts/Lindsay.png", caption: "Lindsay Hawxhurst — $52K big deal alert, first week of the quarter" },
       { src: "/Promotion-case-App/images/shoutouts/Jeet.png", caption: "Jeet Shah — congratulations on closing Agentforce 1 + Rev Cloud" },
-      { src: "/Promotion-case-App/images/shoutouts/chris decker.jpg", caption: "Chris Decker — celebrating TMT Consumption Go Lives and Attrition Saves including PerfectVision" },
       { src: "/Promotion-case-App/images/shoutouts/Eddie-Prasch-Deal-shoutout.jpg", caption: "Eddie Prasch — \"Big thank you to Palakk for her support, could not have done without you!\" — $32K Agentforce + RevCloud upgrade win" },
     ],
     deals: [
