@@ -14,7 +14,7 @@ const promotionData = {
   executiveSummary: [
     "Palakk is the SE teams pull in when the path isn't clear yet. She turns ambiguity into certainty, and she brings people with her. That's the job of a Lead SE, and it's how she already works.",
     "She leads from the front: in her first week on LightEdge, her workshop had the customer asking, \"Why didn't ServiceNow do this for us?\" She orchestrates: at Storable, she brought in executives, strategic SEs and architects at the right moments to renew early against a competitor. And she multiplies: 250+ AEs and 100+ SEs enabled, plus a Prospecting Agent enablement built in three days that became TMT's first Golden Use Case.",
-    "Her RVP says his reps look for her on their deals. SE of the Quarter, $2.1M in ACV in FY27 through Q3, and a team that's better for working with her.",
+    "Her RVP says his reps look for her on their deals. SE of the Quarter, $1.94M in ACV in FY27 through Q3, and a team that's better for working with her.",
     "Her approach is grounded in core values she truly believes in and lives every day.",
   ],
 
@@ -66,13 +66,13 @@ const promotionData = {
   careerAcvTotal: "$7.809M",
 
   acvByYear: [
-    { year: "FY2027", total: "$2.1M", subtitle: "Q1–Q3 to date", quarters: [] },
+    { year: "FY2027", total: "$1.94M", subtitle: "Q1–Q3 to date", quarters: [] },
     { year: "FY2026", total: "$1.4M", quarters: [] },
   ],
 
   highlights: [
     { label: "Career ACV", value: "$7.8M", subtitle: "$7.809M total career contribution" },
-    { label: "ACV", value: "$2.1M", subtitle: "FY27 through Q3" },
+    { label: "ACV", value: "$1.94M", subtitle: "FY27 through Q3" },
     { label: "Award", value: "SE of the\nQuarter", subtitle: "FY27 Q2" },
     { label: "Award", value: "Solutions\nMVP", subtitle: "Oct FY26" },
     { label: "AEs Enabled", value: "250+", subtitle: "AEs | 15+ sessions FY26" },
