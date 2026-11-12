@@ -98,7 +98,7 @@ export default function CompetencyRadar() {
         i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
       }
       ctx.closePath();
-      ctx.strokeStyle = "rgba(42, 53, 80, 0.6)";
+      ctx.strokeStyle = "rgba(125, 140, 166, 0.30)";
       ctx.lineWidth = 1;
       ctx.stroke();
     }
@@ -108,7 +108,7 @@ export default function CompetencyRadar() {
       ctx.beginPath();
       ctx.moveTo(cx, cy);
       ctx.lineTo(cx + maxR * Math.cos(angle), cy + maxR * Math.sin(angle));
-      ctx.strokeStyle = "rgba(42, 53, 80, 0.4)";
+      ctx.strokeStyle = "rgba(125, 140, 166, 0.18)";
       ctx.lineWidth = 1;
       ctx.stroke();
     }
@@ -126,11 +126,11 @@ export default function CompetencyRadar() {
     }
     ctx.closePath();
     const gradient = ctx.createRadialGradient(cx, cy, 0, cx, cy, maxR);
-    gradient.addColorStop(0, "rgba(59, 130, 246, 0.25)");
-    gradient.addColorStop(1, "rgba(139, 92, 246, 0.15)");
+    gradient.addColorStop(0, "rgba(20, 210, 195, 0.22)");
+    gradient.addColorStop(1, "rgba(255, 107, 107, 0.14)");
     ctx.fillStyle = gradient;
     ctx.fill();
-    ctx.strokeStyle = "rgba(96, 165, 250, 0.8)";
+    ctx.strokeStyle = "rgba(20, 210, 195, 0.9)";
     ctx.lineWidth = 2;
     ctx.stroke();
 
@@ -142,9 +142,9 @@ export default function CompetencyRadar() {
 
       ctx.beginPath();
       ctx.arc(x, y, hoveredIndex === i ? 6 : 4, 0, 2 * Math.PI);
-      ctx.fillStyle = hoveredIndex === i ? "#fbbf24" : "#60a5fa";
+      ctx.fillStyle = hoveredIndex === i ? "#ff9a3c" : "#14d2c3";
       ctx.fill();
-      ctx.strokeStyle = "#0a0e1a";
+      ctx.strokeStyle = "#070d1c";
       ctx.lineWidth = 2;
       ctx.stroke();
     }
