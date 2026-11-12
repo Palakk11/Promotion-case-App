@@ -80,13 +80,13 @@ export default function Preamble() {
           <h2>Scope & Complexity — Why Palakk?</h2>
         </div>
         <p className="preamble-lead">
-          Palakk has been performing as a Senior Solution Engineer since FY25 and
-          was a doer even before earning the title — going above and beyond has
-          been a consistent philosophy throughout her journey. Over the course of
-          FY25–FY26, she has operated at scale with leadership impact across the
-          organization's SMB and now CMRCL TMT, bringing expertise across
-          customers of different industries, scale, and technical depth — truly
-          reflecting the essence of a Lead SE.
+          Palakk has been a top performer as a Senior Solutions Engineer since
+          FY25, and she was a doer even before earning the title. Going above and
+          beyond has been a consistent philosophy throughout her journey. Over
+          FY26–FY27, she has operated at scale with leadership impact across the
+          organization, in Commercial TMT and previously in SMB, bringing
+          expertise across customers of different industries, scale, and
+          technical depth, truly reflecting the essence of a Lead SE.
         </p>
         <p className="preamble-lead">
           She has expanded on her role and has been delivering on <strong>3 key
