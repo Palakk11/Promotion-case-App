@@ -16,12 +16,12 @@
   --gold-glow: rgba(255, 154, 60, 0.15);
   --green: #3ee8a8;
   --green-glow: rgba(62, 232, 168, 0.14);
-  --purple: #ff6b6b;
-  --purple-glow: rgba(255, 107, 107, 0.14);
-  --rose: #ff6b6b;
-  --pink: #ff6b6b;
+  --purple: #a78bfa;
+  --purple-glow: rgba(167, 139, 250, 0.14);
+  --rose: #a78bfa;
+  --pink: #a78bfa;
   --cyan: #38bdf8;
-  --brand-gradient: linear-gradient(120deg, #14d2c3 0%, #38bdf8 45%, #ff6b6b 100%);
+  --brand-gradient: linear-gradient(120deg, #14d2c3 0%, #38bdf8 45%, #a78bfa 100%);
 
   --sans: 'Inter', system-ui, -apple-system, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, monospace;
@@ -45,7 +45,7 @@ body {
   background:
     radial-gradient(1000px 560px at 88% -10%, rgba(20, 210, 195, 0.16), transparent 60%),
     radial-gradient(850px 560px at -10% 30%, rgba(56, 189, 248, 0.12), transparent 60%),
-    radial-gradient(850px 650px at 100% 95%, rgba(255, 107, 107, 0.10), transparent 60%),
+    radial-gradient(850px 650px at 100% 95%, rgba(167, 139, 250, 0.10), transparent 60%),
     var(--bg);
   background-attachment: fixed;
   color: var(--text);

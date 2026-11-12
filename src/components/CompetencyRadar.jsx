@@ -127,7 +127,7 @@ export default function CompetencyRadar() {
     ctx.closePath();
     const gradient = ctx.createRadialGradient(cx, cy, 0, cx, cy, maxR);
     gradient.addColorStop(0, "rgba(20, 210, 195, 0.22)");
-    gradient.addColorStop(1, "rgba(255, 107, 107, 0.14)");
+    gradient.addColorStop(1, "rgba(167, 139, 250, 0.14)");
     ctx.fillStyle = gradient;
     ctx.fill();
     ctx.strokeStyle = "rgba(20, 210, 195, 0.9)";
